@@ -1,0 +1,20 @@
+html{
+    background: https://coolbackgrounds.io/images/particles-d1ebcce2.svg no-repeat center center fixed;
+    -webkit-box-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    body{
+        margin: 0;
+        position: center;
+        font-famiy: 'Quicksand, sans-serif';
+    }
+    
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
