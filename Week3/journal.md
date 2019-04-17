@@ -14,4 +14,4 @@
      - name of the value: parameter
      - the actual value itself: argument
      - unless specified the function will by default return undefined
-*
+- Code academy control flow in Javascript
