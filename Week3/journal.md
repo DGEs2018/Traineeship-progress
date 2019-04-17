@@ -13,5 +13,5 @@
   - passing values into functions and using them
      - name of the value: parameter
      - the actual value itself: argument
-     -Unless specified the function will by default return undefined
+     - unless specified the function will by default return undefined
 *
