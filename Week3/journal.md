@@ -23,4 +23,10 @@
   - Browsers
      - receive & fetch data
      - parse html, css & js
+  - More git commands
+     - mkdir <prework-my-first-website> to create a new directory within which to store the linked html, css & image files
+     -  git add it
+     -  git push: but still as an empty new directory won't appear in the repo on GitHub-->
+     - touch .gitignore (to create a new/dummy .gitignore files) & git add .gitignore
+
 
