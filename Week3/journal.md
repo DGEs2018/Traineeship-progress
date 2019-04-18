@@ -27,6 +27,9 @@
      - mkdir <prework-my-first-website> to create a new directory within which to store the linked html, css & image files
      -  git add it
      -  git push: but still as an empty new directory won't appear in the repo on GitHub-->
-     - touch .gitignore (to create a new/dummy .gitignore files) & git add .gitignore
+     - touch .gitignore (to create a new/dummy .gitignore files) & git add .gitignore, git commit & git push it
+     - git mv <name of the files separated by commas> to move the files into the above created subdirectory
+     - git commit -m and git push
+     - git rm --cached to remove the file from the local repository, and the git commit -m "message" & git push goes on 
 
 
