@@ -21,4 +21,6 @@
   - Software, OS, programs and libraries
   - Programming languages, algorithm and time complexity
   - Browsers
-  
+     - receive & fetch data
+     - parse html, css & js
+
