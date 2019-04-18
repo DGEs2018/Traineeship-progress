@@ -15,3 +15,10 @@
      - the actual value itself: argument
      - unless specified the function will by default return undefined
 - Code academy control flow in Javascript
+
+# 18.04.2019
+* Brief introduction to CS
+  - Software, OS, programs and libraries
+  - Programming languages, algorithm and time complexity
+  - Browsers
+  
