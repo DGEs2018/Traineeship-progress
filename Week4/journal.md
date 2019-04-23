@@ -4,3 +4,5 @@
     - TCP / IP
     - DNS
     - DHCP
+    - Server : what it is 
+    - Web server - a quick glimpse at how to set up one with node.js & Express
