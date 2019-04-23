@@ -13,6 +13,7 @@
      - if statements and conditions
      - operators, data types, variables etc.
      - declarations and variable assignments
+     - the difference between `return` and `console`
   - calling and invoking(using) functions
   - passing values into functions and using them
      - name of the value: parameter
