@@ -6,7 +6,7 @@
     - DHCP
     - Server : what it is 
     - Web server - a quick glimpse at how to set up one with node.js & Express
-   |--- This is for trial---| 
-   |--- Commands---|---Function               |
+  - |--- This is for trial---| 
+  - |--- Commands---|---Function               |
  * Installed Preview Markdown Extension `cmd + shift + v` (comes in handy to preview changes made on text editor)
    
