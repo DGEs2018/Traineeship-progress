@@ -1,5 +1,5 @@
 html{
-    background: https://coolbackgrounds.io/images/particles-d1ebcce2.svg no-repeat center center fixed;
+    background: url(./cool-background.png) no-repeat center center fixed;
     -webkit-box-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -18,3 +18,4 @@ html{
         align-items: center;
         justify-content: center;
     }
+    /* https://coolbackgrounds.io/images/particles-d1ebcce2.svg */

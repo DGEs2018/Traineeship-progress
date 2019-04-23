@@ -26,9 +26,12 @@ function uniqueElements(elements) {
     for(let i = 0; i < elements.length; i++) {
         console.log(elements);
 
+        const elGathered = uniqueEl.concat(elements);
+        console.log(elGathered);
+ 
     }
     return uniqueEl;
-    uniqueEl === 
+    
 }
 
 console.log(uniqueElements(words));
