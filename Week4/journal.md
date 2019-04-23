@@ -6,7 +6,8 @@
     - DHCP
     - Server : what it is 
     - Web server - a quick glimpse at how to set up one with node.js & Express
-  - |--- This is for trial---| 
-  - |--- Commands---|---Function               |
+  - | Command           | Function                              |
+  - |---                |---                                    |
+  - |pwd                | print the current working directory   |
  * Installed Preview Markdown Extension `cmd + shift + v` (comes in handy to preview changes made on text editor)
    
