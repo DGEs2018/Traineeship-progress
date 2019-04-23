@@ -11,6 +11,6 @@
   - |pwd                | print the current working directory   |
  * Installed Preview Markdown Extension `cmd + shift + v` (comes in handy to preview changes made on text editor)
  * Read up concerning the `.gitignore` file and created one at the root folder TRAINEESHIP-PROGRESS 
- * On algorithms and time complexity - in the introduction to CS module
+ * On algorithms and time complexity - from the introduction to CS module
     - Algorithmic thinking when going about to solve problems and its time complexity  
     - Importance of algorithm
