@@ -30,6 +30,11 @@
      - touch .gitignore (to create a new/dummy .gitignore files) & git add .gitignore, git commit & git push it
      - git mv <name of the files separated by commas> to move the files into the above created subdirectory
      - git commit -m and git push
-     - git rm --cached to remove the file from the local repository, and the git commit -m "message" & git push goes on 
+     - git rm --cached to remove the file from the local repository, and the git commit -m "message" & git push goes on
+     - the flow of committing -specifically files that are editted:
+     - first `git status` - to check upon the editted files
+     - then `git add <name of the file>` - to add a file that needs to be committed
+     - then `git commit -m "message"` and `git push`
+     -
 
 
