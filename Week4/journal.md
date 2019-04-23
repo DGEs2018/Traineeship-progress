@@ -10,4 +10,5 @@
   - |---                |---                                    |
   - |pwd                | print the current working directory   |
  * Installed Preview Markdown Extension `cmd + shift + v` (comes in handy to preview changes made on text editor)
+ * Read up concerning the `.gitignore` file and created one at the root folder TRAINEESHIP-PROGRESS 
    
