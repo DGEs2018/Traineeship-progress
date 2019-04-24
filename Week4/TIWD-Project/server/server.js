@@ -15,17 +15,24 @@ const http = require('http');
 
 const authors = [ 'John Grisham', 'Sydney Sheldon', 'Agatha Christie', 'Nora Roberts' ];
 
+const individualAuthors = authors.join(', ');
+
 const server = http.createServer(function(request, response) {
+	console.log(request.url);
+	const list = request.url.split('/');
+	console.log(list[1]);
+
 	if (request.url === '/') {
 		response.write('hello world');
 		response.end();
 	} else if (request.url === '/writers') {
-		response.write(authors.toString(', '));
+		response.write(individualAuthors);
 		response.end();
-    } else (request.url === 'request.url.split('/')) {
-        response.write(authors.toString)
-    }
-    
+	} else if (list.length > 2) {
+		let position = list[2] - 1;
+		response.write(authors[position]);
+		response.end();
+	}
 });
 
 server.listen(8080, function() {
