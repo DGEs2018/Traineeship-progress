@@ -70,7 +70,7 @@
        - Headers(analogous to the a list of key value pair that needs to be sent), User Agent (browser type), 
        - Body (ex. when sending a Tweet), is always ONLY in plain text form
     
-    - response
+    - Response
       - Body (most essential, html file) is always sent as text. 
       - Headers (to be able to understand what type of html text is being sent)
       - Content type
@@ -82,19 +82,22 @@
         - 5xx(server problems)
     
     - REST
-        - set a best of practices
+        - Set a best of practices
         - JSON (a way a t)
         - HTML & JS could be sent to a client, and rendered
         - An example of what's not REST - SOAP (where for example in the snippet instead of    GET uses POST)
         - each section provides information about the page
         - Using REST API - has multiples of endpoints
             - /posts, posts/comments, /users, /likes - as each of them are separated
+        - Can respond in xml format also
         
     - GraphQL 
-        - client only has one endpoint called data
-        - ideal to get a lot different resources on the same page (), per single request over the data
-        - very similar to querying in database
-        -
+        - Client only has one endpoint called data
+        - Ideal to get a lot different resources on the same page (), per single request over the data
+        - Very similar to querying in database
+        - Response of GraphQL is 90% JSON
+    - Postman
+        - Always username, id, content-type
     - Authentication
         - One REST API could be shared by multiple users
         
