@@ -99,6 +99,24 @@
         - Here it could be customized as opposed to in REST
     - Postman
         - Always username, id, content-type
-    - Authentication
         - One REST API could be shared by multiple users
-        
+        - 
+    - Authentication
+        - One step prior to request to authenticated server is log-in
+        - Server checks if e-mail already exists and verify, which will then authenticate
+        - Log in, get the string, server will see to check if that token is valid.
+
+        -Recap before serverless containers..
+        - 
+    - Server
+        - Single servers were connected to others from single spot
+        - That changed, later on shared data centers were introduced, more than one server 
+        - Data centers would be done without actually unknown location (while location is actually crucial)
+        - Virtual machines (VM) - were then introduced so as to avoid compatibility and version differences
+        - Instead of accessing directly accessing server
+        - Container
+            - Run on the same operating system of the VM
+            - Separated part within a computer
+            - Easily replicate with the servers
+        - Containers such as Docker to comprise different configuration
+        - 
