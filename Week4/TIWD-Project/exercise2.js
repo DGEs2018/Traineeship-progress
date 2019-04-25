@@ -23,16 +23,15 @@ const area =
 DateTime.local().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' });
  */
 const dateTimeTeller = function() {
-	const needed = new Date(utc);
+	const needed = DateTime.local();
 	// const DateTime = today;
-	const dateTeller = today.local();
-	const weekday = 'Wednesday';
+	const method = toLocaleString(needed.DATE_HUGE);
+	/* const weekday = 'Wednesday';
 	const month = 'April';
-	const day = 24;
+	const day = 24; */
 	console.log(dateTimeTeller);
 };
-
-dateTimeTeller.local().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' });
+console.log(dateTimeTeller());
 
 /* console.log(dateRequired);
 
