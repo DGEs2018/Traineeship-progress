@@ -90,12 +90,13 @@
         - Using REST API - has multiples of endpoints
             - /posts, posts/comments, /users, /likes - as each of them are separated
         - Can respond in xml format also
-        
+        - In JSON format the schema remains conserved
     - GraphQL 
         - Client only has one endpoint called data
         - Ideal to get a lot different resources on the same page (), per single request over the data
         - Very similar to querying in database
         - Response of GraphQL is 90% JSON
+        - Here it could be customized as opposed to in REST
     - Postman
         - Always username, id, content-type
     - Authentication
