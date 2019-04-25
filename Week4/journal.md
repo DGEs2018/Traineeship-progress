@@ -109,7 +109,8 @@
         -Recap before serverless containers..
         - 
     - Server
-        - Single servers were connected to others from single spot
+        - Back in the days, single servers were connected to others from single spot
+        - But this wasn't scalable any longer
         - That changed, later on shared data centers were introduced, more than one server 
         - Data centers would be done without actually unknown location (while location is actually crucial)
         - Virtual machines (VM) - were then introduced so as to avoid compatibility and version differences
@@ -118,5 +119,14 @@
             - Run on the same operating system of the VM
             - Separated part within a computer
             - Easily replicate with the servers
-        - Containers such as Docker to comprise different configuration
-        - 
+            - Containers such as Docker help comprise different configuration, handling the dependencies, 
+            - Development & production need to be done on the same version of NodeJs for instance, or else would crush
+            - Cost at a flatrate
+        - Function as a service (FaaS)
+            - Flexible cost
+            - Much more simple to manage, easily testable
+            - Separate functions would be sent to the cloud
+            - Data limitation
+        
+        - Configure at a place of choice
+            - Trade-off of Google lately
