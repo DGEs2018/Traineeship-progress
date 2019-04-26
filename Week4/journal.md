@@ -134,12 +134,15 @@
 # 26.04.2019
 - More Java methods
     - Array.prototype.reduce() 
-        - ex. const array1 - [1, 2, 3, 4], const reducer =   (accumulator, currentValue) => accumulator + currentValue;
+        - ex. 
+        ```const array1 - [1, 2, 3, 4], const reducer =   (accumulator, currentValue) => accumulator + currentValue;```
         // 1 + 2 + 3 + 4, sort of Fibonacci number ??? Find out more
-        - console.log(array1.reduce(reducer)); # which should then return 10
-        - console.log(array1.reduce(reducer, 5)); # adds up 5 up front, to 5 + 10 = 15
+        - ```console.log(array1.reduce(reducer)); # which should then return 10
+        - ```console.log(array1.reduce(reducer, 5)); # adds up 5 up front, to 5 + 10 = 15
 
     - Four parameters the `reduce` function takes : - accumulator, current value (cur), current index(idx), source array(src).
+
+    
 
 
 
