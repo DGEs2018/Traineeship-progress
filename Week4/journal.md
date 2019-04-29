@@ -3,7 +3,7 @@
     - IP Adresses
     - TCP / IP
     - DNS
-    - DHCP
+    - DHCP (Dynamic Host Configuration Port - a system for allocating IP addresses, helps to automatically assign IP addresses to computers connected to a network)
     - Server : what it is 
     - Web server - a quick glimpse at how to set up one with node.js & Express
   - | Command           | Function                              |
