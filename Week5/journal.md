@@ -14,17 +14,27 @@
         - invoke - run the program ()
     - Attempt to get the file journal.md, out of the directory called 'more-express' failed....
         - Command git mit `journal.md Week5`, while inside more-express, but this ended up naming the file Week5 inside the same directory.
-    - npm run start : tells the node package manager run and go to the part of the separate file, under the scripts and looks for the start 'key' in there.
-    - Object:
-        - a collection of name/value pairs
-        - Object 
-            - primitive property
-            - object property
-            - function 'method
     - Reminders on JS fundamentals
         - Strings should always be under quotation marks or else JS would then assume and search a variable (in vain)
         - Also values inside arrays are separated by a comma
         - Objects- 
             - a collection of name/value pairs
             - Properties inside objects, are separated by a comma
-            - 
+    - npm run start : tells the node package manager run and go to the part of the separate file, under the scripts and looks for the start 'key' in there.
+    - Object:
+        - a collection of name/value pairs
+        - Object 
+            - primitive property
+            - object property
+            - function (called 'method' when attached to an object)
+        - Object literal : name:value pairs separated by commas while contained within curly braces
+         an example 
+         ```{
+             firstname: 'Dawit',
+             lastname : 'Ghebremedhin',
+             address : 
+             {
+                 street : 'unnecessary',
+                 number : 44
+             }
+            }```
