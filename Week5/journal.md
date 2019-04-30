@@ -69,4 +69,19 @@
 - Primary key - the column that uniquely identified
 - Foreign keys - 
 - The danger of migrating tables could be avoided by constructing a better initial model
-- What happens when the same table becomes shared by many users, 1-n relational becomes n-n (while primary keys are still preserved foreign keys disappear) 
+- What happens when the same table becomes shared by many users: 1-n relational becomes n-n (while primary keys are still preserved foreign keys disappear) 
+
+- CMS
+    - content management system enables access for non-developers
+- Headless CMS
+    -
+- API Server
+    - endpoint ('/')
+    - authentication
+    - structure JSON response
+
+- Data Model
+- Good example to look at would be 'ginetta.net' page
+- Table --> Model (collection / singleton)
+- Row   --> Entry
+- Column--> Field
