@@ -69,3 +69,4 @@
 - Primary key - the column that uniquely identified
 - Foreign keys - 
 - The danger of migrating tables could be avoided by constructing a better initial model
+- What happens when the same table becomes shared by many users, 1-n relational with become n-n 
