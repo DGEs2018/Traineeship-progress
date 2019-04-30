@@ -38,3 +38,34 @@
                  number : 44
              }
             }```
+
+
+# 30.04.2019
+* Databases
+- There are many types
+    - DB - is where the data is stored in the server
+    - Relational
+        - key to understanding of the non-relational ones
+    - Non-relational
+
+* Relational Databases
+- Let's construct cookbook application, which would contain
+    - Users
+    - Recipes
+- Table for users, could be
+    - column: with an attribute in each one
+        - contain Id, name, email, address
+    - help uniquely identified a specific resource
+    - row
+- Table for recipes
+    - column : with an attribute in each one
+        - Id, category, title, ingredients, UserId
+
+- SQL (Structured Query Language)
+    - SQL
+    - Select * FROM Users
+    - Schema (the Skeleton of the table)
+- Category created by the user
+- Primary key - the column that uniquely identified
+- Foreign keys - 
+- The danger of migrating tables could be avoided by constructing a better initial model
