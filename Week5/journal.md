@@ -82,6 +82,16 @@
 
 - Data Model
 - Good example to look at would be 'ginetta.net' page
-- Table --> Model (collection / singleton)
+- Table --> Model (collection / singleton - table with a singleton)
 - Row   --> Entry
 - Column--> Field
+
+
+- To model the sectionbanner `We create websites and apps that click with users.`
+- Inputs needed with their datatypes
+- header - text
+- content - text
+- link - collectionlink / ? link
+- link 
+- title - text
+- href - text
