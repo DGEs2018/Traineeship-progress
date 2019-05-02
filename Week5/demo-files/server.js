@@ -5,7 +5,7 @@
 
 let port = 2400;
 
-// sets up a function that will manage requests from clients,
+// set up a function that will manage requests from clients,
 
 let requestHandler = function(request, response) {
 	console.log('New request to: ' + request.url);
@@ -40,23 +40,23 @@ const server = http.createServer((req, res) => {
 				if (!exists) {
 					res.statusCode = 404;
 					res.setHeader('Content-Type', 'text/html');
-					res.end('<html><body><h1>Error 404: ' + fileUrl + ' </h1></body></html>');
+					res.end('Error 404: ' + fileUrl);
 
 					return;
 				}
 				res.statusCode = 200;
 				res.setHeader('Content-Type', 'text/html');
-				res.end('<html><body><h1>Holá Ginettis!</h1></body></html>');
+				res.end('Holá Ginettis!');
 			});
 		} else {
 			res.statusCode = 404;
 			res.setHeader('Content-Type', 'text/html');
-			res.end('<html><body><h1>Error 404: ' + fileUrl + ' not an HTML file</h1></body></html>');
+			res.end('Error 404: ' + fileUrl);
 		}
 	} else {
 		res.statusCode = 404;
 		res.setHeader('Content-Type', 'text/html');
-		res.end('<html><body><h1>Error 404: ' + req.method + ' not supported</h1></body></html>');
+		res.end('Error 404: ' + req.method + ' not supported');
 	}
 });
 
