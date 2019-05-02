@@ -95,3 +95,6 @@
 - link 
 - title - text
 - href - text
+
+* 02.05.2019
+- Routing - mapping HTTP requests to content
