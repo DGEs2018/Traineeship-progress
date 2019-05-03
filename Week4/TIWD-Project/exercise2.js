@@ -23,15 +23,14 @@ const area =
 DateTime.local().toLocaleString({ weekday: 'long', month: 'long', day: '2-digit' });
  */
 const dateTimeTeller = function() {
-	const needed = DateTime.local();
+	const date = luxon.DateTime.local();
 	// const DateTime = today;
-	const method = toLocaleString(needed.DATE_HUGE);
+	console.log(date.toLocaleString(luxon.DateTime.DATE_HUGE));
 	/* const weekday = 'Wednesday';
 	const month = 'April';
 	const day = 24; */
-	console.log(dateTimeTeller);
 };
-console.log(dateTimeTeller());
+dateTimeTeller(); //
 
 /* console.log(dateRequired);
 
