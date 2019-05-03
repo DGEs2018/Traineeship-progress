@@ -97,4 +97,8 @@
 - href - text
 
 * 02.05.2019
+- Presentation on servers and clients.
+
 - Routing - mapping HTTP requests to content
+    - 
+
