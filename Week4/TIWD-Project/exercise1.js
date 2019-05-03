@@ -6,15 +6,23 @@
 
 const sentence1 = 'guide your learning through pain';
 // const findLongest = function() {}
-const splittedSent = sentence1.split(' ').join();
 
 const longestWord = function(sentence1) {
-	for (let i = 0; i < splittedSent.length; i++) {
+	const splittedSent = sentence1.split(' ');
+	let maxLength = 0;
+	let forNowLongest = '';
+	/* for (let i = 0; i < splittedSent.length; i++) {
 		// create a variable to assign the temporarily longest word
 		let forNowLongest = splittedSent[0];
 		// compare the temp. longest word to the following ones
 		if (forNowLongest <= splittedSent[i].length) {
 			forNowLongest = splittedSent[i];
+		}
+	} */
+	for (let i = 0; i < splittedSent.split(''); i++) {
+		if (splittedSent > maxLength) {
+			forNowLongest = word;
+			maxLength = word.length;
 		}
 	}
 	return forNowLongest;
