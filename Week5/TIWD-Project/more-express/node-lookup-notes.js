@@ -1,3 +1,6 @@
+/**
+ * This file refers to describe today's journal's initial notes.
+ */
 //function statement
 function greet() {
 	console.log('hi');

@@ -1,12 +1,12 @@
 {
-  "name": "more-express",
-  "version": "1.0.0",
-  "description": "Node express example",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    "start":"node index"
-  },
-  "author": "Dawit Ghebremedhin",
-  "license": "ISC"
+	"name": "more-express",
+	"version": "1.0.0",
+	"description": "Node express example",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node node-lookup-notes"
+	},
+	"author": "Dawit Ghebremedhin",
+	"license": "ISC"
 }

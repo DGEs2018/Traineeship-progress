@@ -100,5 +100,9 @@
 - Presentation on servers and clients.
 
 - Routing - mapping HTTP requests to content
-    - 
+    -
 
+* 03.05.2019
+- Shortcut Shift + Cmd + P to access the shell command on the VS interface.
+
+- Discussion about scopes and closures with Yusef (`closure.js`)
