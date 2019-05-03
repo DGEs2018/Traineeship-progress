@@ -12,3 +12,16 @@ const isAnagram = function() {}
 const result = isAnagram(word1, word2);
 console.log(result); // true
 */
+function isAnagram(word1, word2) {
+	a = word1.split('').sort();
+	b = word2.split('').sort();
+	for (let i = 0; i < word1.length; i++) {
+		if (a.length == b.length) {
+			if (a[i] === b[i]) {
+				console.log(true);
+			}
+		} else {
+			return false;
+		}
+	}
+}
