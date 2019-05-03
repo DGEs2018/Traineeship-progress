@@ -8,8 +8,8 @@ app.get('/', (req, res) => {
 	res.send(authors);
 });
 
-app.get('/authors/:authorId', (req, res) => {
-	res.send(authors[req.params.writerId - 1]);
+app.get('/authors/:writingId', (req, res) => {
+	res.send(authors[req.params.writingId - 1]);
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}!`));
