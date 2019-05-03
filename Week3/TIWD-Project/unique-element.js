@@ -9,7 +9,7 @@ const unique = function() {}
 const uniqueElements = unique(elements);
 console.log(uniqueElements) // ['hi', 'hello', 'hello world!', 'hola', 'hallo']
  */
-const words = ['hi', 'hello', 'hi', 'hello world!', 'hola', 'hallo', 'hola'];
+const elements = ['hi', 'hello', 'hi', 'hello world!', 'hola', 'hallo', 'hola'];
 // const unique = function(elements) {
 //     const uniqueElements = [];
 //     for (let i = 0; i < elements.length; i++) {
@@ -28,6 +28,10 @@ function uniqueElements(elements) {
 
         const elGathered = uniqueEl.concat(elements);
         console.log(elGathered);
+
+        if (elGathered[i]=1) {
+            console.log(elGathered[i]);
+        }
  
     }
     return uniqueEl;

@@ -18,7 +18,8 @@
 let words = ['Richie', 'Joanie', 'Greg', 'Marcia', 'Bobby'];
 
 function longestWord(words) {
-    console.log(words);
+    
+    const words =;
 
     const longestWordYet = words ;
 
