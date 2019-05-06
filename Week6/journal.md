@@ -4,4 +4,17 @@
     - Are special kind of websites where the user doesn't see any reload despite interacting with the page.
     - SPA relies primarily on JS - interaction with server to change the content in the page.
     - Usually heavy on the first load as this requires the browser to download the entire content.
-    - 
+    - Problems with SEO and SPAs
+        - Not very suitable in terms of search engine optimization.
+        - HTML sent by the server is by default an empty `<div>` and content is loaded afterwards with JS
+        - In case that the crawler can't execute JS - then the reload won't be seen
+        - Rendering
+        - Multipage applications - as using either server-side or runtime rendering.
+        - Client-side rendering
+            - Happens in the client - meaning that the client needs to execute JS
+            - Hence takes longer to see the content in the page.
+            - By default, this makes use of framework such as React or VueJS.
+        - Server-side rendering
+            - All begins with the client sending a request to a server.
+            - In the old way - server can then either respond either with an empty HTML or create HTML before sending it
+            - SSR - html is populated in the server & then sent to the client. Then this will be executed at the client side - the plus this time, it now only needs to synchronize with the html instead of having to render the entire page.
