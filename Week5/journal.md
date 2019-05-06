@@ -97,7 +97,7 @@
 - href - text
 
 * 02.05.2019
-- Presentation on servers and clients.
+- Presentation on servers and clients <https://docs.google.com/presentation/d/1laPd-ru4ffcWh_bW6oxjWq9ZmI8sk5UM6Sqm6PsF0ZE/edit#slide=id.g5901879338_0_22>
 
 - Routing - mapping HTTP requests to content
     -
