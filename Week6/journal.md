@@ -18,3 +18,7 @@
             - All begins with the client sending a request to a server.
             - In the old way - server can then either respond either with an empty HTML or create HTML before sending it
             - SSR - html is populated in the server & then sent to the client. Then this will be executed at the client side - the plus this time, it now only needs to synchronize with the html instead of having to render the entire page.
+    - Include certain files and directories to the .gitignore list
+     1. vim .gitignore 
+     2. git config --global core.excludesfile ~/.gitignore
+
