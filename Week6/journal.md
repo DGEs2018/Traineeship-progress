@@ -35,9 +35,11 @@
     - The content is then decoupled from the UI
     - So fast that user never sees an empty HTML
     - User just requests more content
-    - 
+        - Problems
+            - Some browsers might not be JS indexed
+            - Slow / poor connection might affect the content displayed
 - Rendering
     - Happens at the client-side (at the browser and/or crawler)
-    - empty <div></div> would then be populated with the content (the JS will do this after fetching content from the )
+    - Empty <div></div> would then be populated with the content (the JS will do this after fetching content from the )
     - 
     - 
