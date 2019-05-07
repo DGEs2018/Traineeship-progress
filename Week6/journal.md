@@ -27,6 +27,7 @@
     - Any small action on the web page triggers a complete refresh of page in the 
     - HTML and Content the same files
     - Everything is happening from the server-side
+    - Preferable where static HTML content prevail (blog page)
 - SPAs
     - Go to page, you find empty HTML in content,
     - Static (files)
@@ -36,10 +37,23 @@
     - So fast that user never sees an empty HTML
     - User just requests more content
         - Problems
-            - Some browsers might not be JS indexed
+            - Some browsers might not be JS indexed / search engine problems
             - Slow / poor connection might affect the content displayed
-- Rendering
-    - Happens at the client-side (at the browser and/or crawler)
-    - Empty <div></div> would then be populated with the content (the JS will do this after fetching content from the )
+    - Contains always static files
+    - Client can't differentiate whether rendering was client-side or server-side !!! (given good internet connection)
+        - Client-side rendering
+            - Happens at the client-side (at the browser and/or crawler)
+            - Empty <div></div> would then be populated with the content (the JS will do this after fetching content from the )
+            - 
+        - Server-side rendering
+                - Contains a mix of 
+                - On the first request (rendering is the same as that of in multipage apps )
+     - If client have more interactions SPAs might be more prefered
+- Node JS
+    - Contains all sort of files altogether as opposed the old way 
+- Building multipage application using ReactJS
+    - HTML files already pre-existed
     - 
-    - 
+- Dynamic vs Static pages
+    - Dynamic - every time request is sent, it's created on the fly
+    - Static - doesn't have to be created  (One does with just a dummy page)
