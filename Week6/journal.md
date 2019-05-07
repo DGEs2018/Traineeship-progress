@@ -29,7 +29,8 @@
     - Everything is happening from the server-side
     - Preferable where static HTML content prevail (blog page)
 - SPAs
-    - Go to page, you find empty HTML in content,
+    - Go to page, you find empty HTML in content
+    - By single page, it isn't to mean that it's literally single, the page just doesn't refresh
     - Static (files)
     - Content is what needs a DB (isn't hence static content)
     - Different servers
