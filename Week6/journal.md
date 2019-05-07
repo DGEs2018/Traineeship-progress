@@ -36,3 +36,8 @@
     - So fast that user never sees an empty HTML
     - User just requests more content
     - 
+- Rendering
+    - Happens at the client-side (at the browser and/or crawler)
+    - empty <div></div> would then be populated with the content (the JS will do this after fetching content from the )
+    - 
+    - 
