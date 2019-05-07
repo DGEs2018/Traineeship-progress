@@ -22,3 +22,17 @@
      1. vim .gitignore 
      2. git config --global core.excludesfile ~/.gitignore
 
+* 07.05.2019
+- Multi page App
+    - Any small action on the web page triggers a complete refresh of page in the 
+    - HTML and Content the same files
+    - Everything is happening from the server-side
+- SPAs
+    - Go to page, you find empty HTML in content,
+    - Static (files)
+    - Content is what needs a DB (isn't hence static content)
+    - Different servers
+    - The content is then decoupled from the UI
+    - So fast that user never sees an empty HTML
+    - User just requests more content
+    - 
