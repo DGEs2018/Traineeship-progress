@@ -58,3 +58,19 @@
 - Dynamic vs Static pages
     - Dynamic - every time request is sent, it's created on the fly
     - Static - doesn't have to be created  (One does with just a dummy page)
+
+* 08.05.2019
+- Git
+    - A way of tracking several versions of changes to a documentation.
+    - Working directory, staging and commit stages
+    - Repository (repo for short) is a working directory on Git (bad practice is to have a repo inside a repo)
+    - Master
+    - Branches (could have as many as possible)
+    - Pull request & code review
+    - Some prefer to constantly work on the masters branch
+- Environments
+- Development (consist of multiples of sprints)
+- Test (checking functionality, UI )
+- Staging (different to the stage discussed in Git, real datas )
+- Deployment (the stage when moving from staging to production)
+- Production
