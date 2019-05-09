@@ -1,0 +1,1 @@
+export default { wrapper: 'docs/wrapper.js' }
