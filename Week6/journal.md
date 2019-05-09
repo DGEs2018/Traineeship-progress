@@ -24,7 +24,7 @@
 
 * 07.05.2019
 - Multi page App
-    - Any small action on the web page triggers a complete refresh of page in the 
+    - Any small action on the web page triggers a complete refresh of the entire page
     - HTML and Content the same files
     - Everything is happening from the server-side
     - Preferable where static HTML content prevail (blog page)
@@ -68,9 +68,10 @@
     - Branches (could have as many as possible)
     - Pull request & code review
     - Some prefer to constantly work on the masters branch
-- Environments
+- Environments - the copy of the project that has not yet reached end-users, but rather for developers and managers in the project.
 - Development (consist of multiples of sprints)
 - Test (checking functionality, UI )
-- Staging (different to the stage discussed in Git, real datas )
+- Staging (different to the stage discussed in Git, tests if newer versions are running without errors with real data, in the same environment as that of the end-users)
 - Deployment (the stage when moving from staging to production)
 - Production
+- SPA + client page application is something like downloading the desktop app everytime you click the application.
