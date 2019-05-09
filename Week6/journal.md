@@ -75,3 +75,6 @@
 - Deployment (the stage when moving from staging to production)
 - Production
 - SPA + client page application is something like downloading the desktop app everytime you click the application.
+
+* 09.05.2019
+- 
