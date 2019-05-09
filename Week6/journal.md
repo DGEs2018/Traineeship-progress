@@ -77,4 +77,28 @@
 - SPA + client page application is something like downloading the desktop app everytime you click the application.
 
 * 09.05.2019
-- 
+- Eloquent Javascript
+    - Bits - anything of zeros and ones. Any piece of discrete information can therefore be reduced to a sequence of zeros and ones - to be then represented in bits.
+    -  right to left with increment of two from right to left Ex. 13 = 8 + 4 + 1, 00001101, 1 - where the summation entity are to a power of two, 0 when not.
+    - Values - a typical modern computer contains > (30 billion) 3e10 bits in its working memory.
+    - To manage with such quantities of bits - these need to be separated into chunks called values in JS environment.
+        - values
+            - numbers 
+            - pieces of text(string)
+            - functions etc.
+    - JS uses a fixed number of bits - i.e. 64. With N decimal digits, 10^N numbers : likewise, with 64 binary digits, 2^64 = 18 quintillion(18e18) numbers can be represented. \
+    - Fractional numbers, scientific notations 2.998 x 10^8 = 2.998e8
+    - Arithmetic : addition, subtraction, multiplication and division, remainder operation ( using the modulo % symbol)
+    - Important is the rule of precedence, for operators of same precedence appearing next to one another left to right & in case of doubt binding numbers with parentheses () is ideal. 
+    - 3 special numbers in JS
+        - infinity
+        - -infinity
+        - NaN
+    - Strings - data type, representing a text, using single & double quotes, or backticks (need to match at the start & end)
+    - "This is the first line\nAnd this is the second" \n - means new line, \t, tab
+    - Strings can neither be divided, bne multiplied nor subtracted, but could take the `+` operator for concatenation.
+    - Operator can also be written as words, such as `typeof` (unary operator) - returning a string value with the type of the given value. Example - console.log(typeof 4.5) --> number
+    - Boolean values - distinguishes between true and false
+    - Comparison in strings - uppercase letters are always “less” than lowercase ones, so "Z" < "a", and nonalphabetic characters (!, -, and so on) are also included in the ordering
+    - The only value in JS that is not equal to itself (NaN- not a number, the third data type) - i.e. console.log(Nan == NaN) --> false
+
