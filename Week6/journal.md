@@ -105,7 +105,12 @@
     - JS Eloquent chapter 1 continued....
         - Logical Operators could also be applied to Boolean values: `and, or & not`
         - JS compromises with to accepting any program possibly given
-        Examples : console.log(8 * null) // 0, console.log("5" - 1) //4, console.log ("5" + 1) // 51, console.log ("five" * 2) //NaN, console.log( false == 0) // true
+        ```Examples :  console.log(8 * null) // 0, 
+                    console.log("5" - 1) //4
+                    console.log ("5" + 1) // 51, 
+                    console.log ("five" * 2) // NaN, 
+                    console.log( false == 0) // true
+        ```
         - When an operator is applied to the value of 'wrong' data type - JS quietly coerces to change the value to what it needs.
         - Accidental type conversions
         - To test a whether a value has a real value instead of `null or undefined` - it could be compared to `null` with the == (or !=) operator
