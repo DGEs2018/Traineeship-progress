@@ -77,7 +77,7 @@
 - SPA + client page application is something like downloading the desktop app everytime you click the application.
 
 # 09.05.2019
-* Eloquent Javascript
+* Eloquent Javascript Chapter 1 - values, types, and operators
     - Bits - anything of zeros and ones. Any piece of discrete information can therefore be reduced to a sequence of zeros and ones - to be then represented in bits.
     -  right to left with increment of two from right to left Ex. 13 = 8 + 4 + 1, 00001101, 1 - where the summation entity are to a power of two, 0 when not.
     - Values - a typical modern computer contains > (30 billion) 3e10 bits in its working memory.
@@ -118,3 +118,12 @@
     - This additional operators : 1. "===" and 2. "!==" - while the 1^st tests equality of both type and value (precise equality), the 2^nd test whether they are not precisely equal
     - Short circuiting of logical operators
          - && & || - will return either the original (left-hand side value) or the right-hand side
+
+* Eloquent JS Chapter 2 - Program Structure
+- Bindings 
+    - How does a program remember an internal state ?
+    - JavaScript's way of to catch and hold values - binding or variable
+    - var & const - could be used to declare names : for the most part const is used in this chapter due to the confusing properties of `var`
+    - Binding names - could be any word. Digits, could be part of it, they just shouldn't be the initials
+    - Also allowed, `$, _`
+    - No other punctuations or special characters
