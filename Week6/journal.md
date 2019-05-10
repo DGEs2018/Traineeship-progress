@@ -101,4 +101,15 @@
     - Boolean values - distinguishes between true and false
     - Comparison in strings - uppercase letters are always “less” than lowercase ones, so "Z" < "a", and nonalphabetic characters (!, -, and so on) are also included in the ordering
     - The only value in JS that is not equal to itself (NaN- not a number, the third data type) - i.e. console.log(Nan == NaN) --> false
-    - Logical Operators could also be applied to Boolean values: `and, or & not`
+    * 10.05.2019
+    - JS Eloquent chapter 1 continued....
+        - Logical Operators could also be applied to Boolean values: `and, or & not`
+        - JS compromises with to accepting any program possibly given
+        Examples : console.log(8 * null) // 0, console.log("5" - 1) //4, console.log ("5" + 1) // 51, console.log ("five" * 2) //NaN, console.log( false == 0) // true
+        - When an operator is applied to the value of 'wrong' data type - JS quietly coerces to change the value to what it needs.
+        - Accidental type conversions
+        - To test a whether a value has a real value instead of `null or undefined` - it could be compared to `null` with the == (or !=) operator
+        - But how about when testing if a value has the precise value `false` - `0 == false` and `" " == false`  are also true due to the automatic type conversion.
+        - This additional operators : 1. "===" and 2. "!==" - while the 1^st tests equality of both type and value (precise equality), the 2^nd test whether they are not precisely equal
+        - Short circuiting of logical operators
+            - && & || - will return either the original (left-hand side value) or the right-hand side
