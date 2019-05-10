@@ -1,3 +1,4 @@
+
 // Short circuiting
 // TRUE & FALSE => 2 boolean values
 // truthy && falsy values
@@ -31,4 +32,4 @@ function withArgs(a, b = 100) {
 }
 
 console.log(withArgs(20));
-console.log(withArgs(20, 1));
+console.log(withArgs(20, 1)cd );
