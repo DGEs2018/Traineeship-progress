@@ -101,4 +101,4 @@
     - Boolean values - distinguishes between true and false
     - Comparison in strings - uppercase letters are always “less” than lowercase ones, so "Z" < "a", and nonalphabetic characters (!, -, and so on) are also included in the ordering
     - The only value in JS that is not equal to itself (NaN- not a number, the third data type) - i.e. console.log(Nan == NaN) --> false
-
+    - Logical Operators could also be applied to Boolean values: `and, or & not`
