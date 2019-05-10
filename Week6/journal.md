@@ -1,5 +1,5 @@
-* 06.05.2019
-- SPAs
+# 06.05.2019
+* SPAs
 - What they are ?
     - Are special kind of websites where the user doesn't see any reload despite interacting with the page.
     - SPA relies primarily on JS - interaction with server to change the content in the page.
@@ -22,15 +22,15 @@
      1. vim .gitignore 
      2. git config --global core.excludesfile ~/.gitignore
 
-* 07.05.2019
-- Multi page App
+# 07.05.2019
+* Multi page App
     - Any small action on the web page triggers a complete refresh of the entire page
     - HTML and Content the same files
     - Everything is happening from the server-side
     - Preferable where static HTML content prevail (blog page)
 - SPAs
     - Go to page, you find empty HTML in content
-    - By single page, it isn't to mean that it's literally single, the page just doesn't refresh
+    - By single page, it isn't to mean that it's literally single, the page just doesn't do a complete page reload on refresh
     - Static (files)
     - Content is what needs a DB (isn't hence static content)
     - Different servers
@@ -59,8 +59,8 @@
     - Dynamic - every time request is sent, it's created on the fly
     - Static - doesn't have to be created  (One does with just a dummy page)
 
-* 08.05.2019
-- Git
+# 08.05.2019
+* Git
     - A way of tracking several versions of changes to a documentation.
     - Working directory, staging and commit stages
     - Repository (repo for short) is a working directory on Git (bad practice is to have a repo inside a repo)
@@ -76,8 +76,8 @@
 - Production
 - SPA + client page application is something like downloading the desktop app everytime you click the application.
 
-* 09.05.2019
-- Eloquent Javascript
+# 09.05.2019
+* Eloquent Javascript
     - Bits - anything of zeros and ones. Any piece of discrete information can therefore be reduced to a sequence of zeros and ones - to be then represented in bits.
     -  right to left with increment of two from right to left Ex. 13 = 8 + 4 + 1, 00001101, 1 - where the summation entity are to a power of two, 0 when not.
     - Values - a typical modern computer contains > (30 billion) 3e10 bits in its working memory.
@@ -101,7 +101,7 @@
     - Boolean values - distinguishes between true and false
     - Comparison in strings - uppercase letters are always “less” than lowercase ones, so "Z" < "a", and nonalphabetic characters (!, -, and so on) are also included in the ordering
     - The only value in JS that is not equal to itself (NaN- not a number, the third data type) - i.e. console.log(Nan == NaN) --> false
-    * 10.05.2019
+# 10.05.2019
     - JS Eloquent chapter 1 continued....
         - Logical Operators could also be applied to Boolean values: `and, or & not`
         - JS compromises with to accepting any program possibly given
