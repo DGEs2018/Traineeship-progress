@@ -12,6 +12,16 @@
         - Invoking, calling or applying - are terms for executing functions
         - Values given functions - arguments
         - The number or type of arguments could vary for different functions
-        - Most JS systems provide `console.log` functions, which outputs the result after arguments are plugged in the function
-         - Javascript console in the browsers can be accessed via `Command option J`
-         - 
+        - The console.log functions
+            - Most JS systems provide `console.log` functions, which outputs the result after arguments are plugged in the function
+            - Javascript console in the browsers can be accessed via `Command option J`
+        - Return Values
+            - Function produces a value, it's said to return that value
+            - Examples: Math.min, Math.max
+        - Control flow
+            - When program contains multiple statements, they are executed from top to bottom
+        - Conditional execution
+            - Where programs take a proper branch, based on the conditions
+            - This makes use of the `if` keyword
+            - The `if` keyword executes or skips a statement depending on the value of a Boolean expression
+            - This deciding expression is written between parentheses after the keyword, then followed by the statement to execute
