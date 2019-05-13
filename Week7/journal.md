@@ -49,3 +49,51 @@
                   } while (!yourName);
                   console.log(yourName);
               ```
+            - The program will force you to enter a name: it'll repetitively ask until it gets something of not an empty string
+            - Applying the `!` operator convert a value to the a Boolean type before negating it, and all strings except "" convert to true. 
+            - Indenting code
+                - Its role inside blocks is to make the structure of the code stand out, hence easier to follow the beginning and ending of each block
+                - 2, 4 spaces or tabs - important is that each new the same amount of space be added in each block
+            - For loops
+                - Within the parentheses after the `for` keyword are two semicolons.
+                - Preceding the first semicolon, initializer, usually by defining a binding with `let`
+                - Following the initializer comes the expression that checks whether the loop must continue
+                - Then the last part updates the state of the loop after every iteration
+                - In most cases `for`loops are cleaner and shorter than a `while` construct
+                - For the 2^10 computing code, below is an alternative solution using for
+
+                ```let result = 1;
+                    for (let counter = 0; counter < 10; counter = counter + 1) {
+                    result = result * 2;
+                    }
+                    console.log(result);
+                    // → 1024
+                ``` 
+                - Breaking out of a loop
+                    - Not only `false` values to a loop end a loop
+                    - `break` also has the effect of jumping out of the enclosing loop
+                    ```for (let current = 80; ; current = current + 4) {
+                        if (current % 7 == 0) {
+                            console.log(current);
+                            break;
+                        }
+                        }
+                        // → 84
+                    ```
+                    - As the for loop doesn't have a checker for the end of the loop unless a `break` statement is plugged in inside
+                    - If either `break` is removed or it's accidentally forgotten, the program will keep on producing true thus will be stuck in an infinite loop - bad !!!
+                    - The `continue` keyword does the opposite of break
+                - Updating bindings succinctly
+                    - Especially when looping, programs need to update a binding based on the previous value it contains
+                    - `counter = counter + 1`
+                    - Shortcuts in JS for the above one and the like 
+                    ``` counter += 1 or counter ++;
+                        result *= 2; // double result
+                        counter -= 1 or counter -- ;// to count down
+                     ```
+                - Dispatching on a value with switch
+                - Capitalization
+                    - JS follows the camelCase convention
+                - Comments
+                    - Are used to describe to other readers the meanings the codes convey
+                    - Also for the coders themselves, to stick to related thoughts while coding
