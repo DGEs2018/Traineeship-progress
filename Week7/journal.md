@@ -97,3 +97,5 @@
                 - Comments
                     - Are used to describe to other readers the meanings the codes convey
                     - Also for the coders themselves, to stick to related thoughts while coding
+                    - Piece of text written along the program, but is completely ignored by the computer when the program is being executed
+                    - For single line `//` or for section of more than one line `/* */` irrespective of the line breaks contained inside
