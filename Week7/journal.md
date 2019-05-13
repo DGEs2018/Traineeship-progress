@@ -1,4 +1,4 @@
-# 12.05.2019
+# 13.05.2019
 * Eloquent JS Chapter 2 - Program Structure ctd.
 - Unexpected syntax error will pop up in case of trying to define a reserved word.
 - The environment
