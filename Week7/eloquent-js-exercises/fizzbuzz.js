@@ -15,8 +15,7 @@ function fizzBuzz(num) {
 	}
 }
 
-console.log(fizzBuzz(100));
-
 console.log(fizzBuzz(3)); // divisible by 3 should therefore return Fizz
 console.log(fizzBuzz(5)); // divisible by 5 should therefore return Buzz
 console.log(fizzBuzz(15); // divisible by both 3 and 5 should therefore return FizzBuzz
+console.log(fizzBuzz(100));
