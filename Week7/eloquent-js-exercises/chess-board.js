@@ -10,10 +10,10 @@ function chessBoard(string) {
 		// counter+= "####";
 		for (let counter = 1; counter < 9; counter += '#') {
 			//for the top to bottom going #s
-			if (counter % 2 !== 0) {
+			/* if (counter % 2 !== 0) {
 				console.log(' ####');
 			} else if (counter % 2 === 0) {
-				console.log('#### ');
+				console.log('#### '); */
 			}
 		}
 	}
