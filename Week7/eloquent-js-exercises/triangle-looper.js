@@ -1,5 +1,6 @@
 /*
-Write a loop that makes seven calls to console.log to output the following triangle:
+Write a triangle that outputs a right angle triangle, 
+starting with 1 # at the left topmost to 7 #s at the right bottom
 
 */
 
@@ -12,7 +13,7 @@ function trianglePrinter(input) {
 console.log(trianglePrinter(input));
 
 /* 
-Console.log should return something like this
+Expected output should be similar to the display below.
 #
 ##
 ###
