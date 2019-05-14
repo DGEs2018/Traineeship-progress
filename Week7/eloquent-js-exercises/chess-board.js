@@ -5,9 +5,11 @@ let output = ' ';
 function chessBoard(string) {
 	let counter = 1;
 	for (let counter = 1; counter < 5; counter += '#') {
-		// need to work my head around to have the counters, might be too early for i
+		// need to get my head around to have the counters, could that be done without indices
+		// this will be for the left to right going #s
 		// counter+= "####";
 		for (let counter = 1; counter < 9; counter += '#') {
+			//for the top to bottom going #s
 			if (counter % 2 !== 0) {
 				console.log(' ####');
 			} else if (counter % 2 === 0) {
