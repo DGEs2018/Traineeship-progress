@@ -99,3 +99,47 @@
                     - Also for the coders themselves, to stick to related thoughts while coding
                     - Piece of text written along the program, but is completely ignored by the computer when the program is being executed
                     - For single line `//` or for section of more than one line `/* */` irrespective of the line breaks contained inside
+# 14.05.2019
+* Eloquent Javascript: Chapter 3 - Functions
+- Defining a function
+    - A regular binding where the value of the binding is a function
+    - Start with keyword function, contains a set of parameters (or even no parameter) and a body, i.e. lines of statements that are to be executed when a function is called. Body must always be wrapped inside braces.
+    - Example
+     ``` 
+     // A function containing no parameter at all.
+     const greetz = function() {
+        console.log ('Shallom!!')
+        }
+
+    // A function containing multiple parameters.
+    const sqrt = function(base, square){
+        let result = 1;
+        for (let count = 0; count < exponent; count++) {
+            result *= base;
+        }
+        return result;
+    }
+     ```
+    - A `return` keyword without an expression following it causes the function to return `undefined`
+    - Parameters to a function behave like regular bindings, their initial values are given by the caller of the function and not the code in the function itself
+
+- Bindings and scopes
+    - Scope is the part of the program within which the binding is visible
+    - The scope for bindings outside any function or block is the program - also known as _global_
+    : _meaning if you've one of those inside a loop, these are invisible to the code before and after the loop_**
+
+    - Each scope can 'look out' into the scope around it, so x is visible inside
+    - Exception is when multiple bindings have the same name - code can see only the innermost one. 
+    : a case in point the example referring to _n_ below - we're referring to the _n/2_ of the function.
+        
+    - Illustration    
+        ``` const halve = function(n) {
+            return n / 2;
+            };
+
+            let n = 10;
+            console.log(halve(100));
+            // → 50
+            console.log(n);
+            // → 10
+        ```
