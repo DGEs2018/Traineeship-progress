@@ -12,6 +12,7 @@ function trianglePrinter(input) {
 console.log(trianglePrinter(input));
 
 /* 
+Console.log should return something like this
 #
 ##
 ###
