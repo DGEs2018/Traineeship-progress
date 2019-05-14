@@ -3,15 +3,15 @@
  At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
  */
 
-function chessBoard(white, dark) {
-	let white = ' ';
-	let dark = '#';
+let white = ' ';
+let dark = '#';
 
+function chessBoard(white, dark) {
 	for (let i = 0; i < 8; i++) {
 		// need to get my head around to have the counters, could that be done without indices
 		if (i % 2 === 0) {
 			console.log( white);
-		} else(i % 2!== 0) {
+		} else (i % 2!== 0) {
 			console.log(dark);
 		}
 		// this will be for the left to right going #s
@@ -19,7 +19,7 @@ function chessBoard(white, dark) {
 		for (let j = 0; j < 8; j++) {
 			if (j % 2 === 0) {
 				console.log( white);
-			} else(j % 2 !== 0) {
+			} else (j % 2 !== 0) {
 				console.log(dark);
 			}
 			}
