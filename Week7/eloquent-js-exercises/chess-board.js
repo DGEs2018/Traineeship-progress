@@ -3,38 +3,54 @@
  At each position of the grid there is either a space or a "#" character. The characters should form a chessboard.
  */
 
-let white = ' ';
+// let white = ' ';
+// let dark = '#';
+
+// function chessBoard(white, dark) {
+// 	for (let i = 0; i < 8; i++) {
+// 		// horizontals / rows
+// 		if (i % 2 === 0) {
+// 			console.log(white);
+// 		} else if (i % 2 !== 0) {
+// 			console.log(dark);
+// 		}
+// 		// replicate this for loop for the rest of the rows
+
+// 		// console.log("\n");
+
+// 		// verticals / columns
+// 		for (let j = 0; j < 8; j++) {
+// 			if (j % 2 === 0) {
+// 				console.log(white);
+// 			} else if (j % 2 !== 0) {
+// 				console.log(dark);
+// 			}
+// 		}
+// 	}
+// 	// replicate this for loop for the rest of the columns
+// 	return chessBoard;
+// }
+
+let chessBoard = '';
 let dark = '#';
-
-function chessBoard(white, dark) {
+let white = ' ';
+// iterate over each of the 8 rows, top to bottom
+for (let j = 0; j < 8; j++) {
+	// once the loop goes all the way through the first row till 8th position it should jump to the next newline
+	if (j > 0) chessBoard += '\n';
+	// in each row it should populate the inputs vertically
 	for (let i = 0; i < 8; i++) {
-		// horizontals / rows
-		if (i % 2 === 0) {
-			console.log( white);
-		} else (i % 2!== 0) {
-			console.log(dark);
+		// where the sum of the ith and jth position is even populate the checkboard with white
+		if ((i + j) % 2 === 0) {
+			chessBoard += white;
+			// else where the sum of the ith and jth position is odd populate the checkboard with dark
+		} else {
+			chessBoard += dark;
 		}
-		// replicate this for loop for the rest of the rows
-
-		// console.log("\n");
-
-		
-		// verticals / columns
-		for (let j = 0; j < 8; j++) { 
-			if (j % 2 === 0) {
-				console.log( white);
-			} else (j % 2 !== 0) {
-				console.log(dark);
-			}
-			}
-		}
-		// replicate this for loop for the rest of the columns
-	return chessBoard;
 	}
-	
+}
 
-console.log(chessBoard(white, dark));
-
+chessBoard;
 /*
 Passing this string to console.log should show something like this:
 
