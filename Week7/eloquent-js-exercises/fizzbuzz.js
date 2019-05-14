@@ -5,20 +5,41 @@ whereas for those that don't fulfill the above conditions, just the number itsel
  */
 
 function fizzBuzz(num) {
-	for (let num = 0; num < 100; num++) {
-		if (num % 3 === 0) {
+	if (num < 1) {
+		console.log('number is too small');
+	} else if (num > 100) {
+		console.log('number is too big');
+	} else {
+		if (num % 3 === 0 && num % 5 === 0) {
+			console.log('FizzBuzz');
+		} else if (num % 3 === 0) {
 			console.log('Fizz');
 		} else if (num % 5 === 0) {
 			console.log('Buzz');
-		} else if (num % 3 === 0 && num % 5 === 0) {
-		console.log('FizzBuzz');
 		} else {
-		console.log(num);
+			console.log(num);
 		}
 	}
 }
 
-console.log(fizzBuzz(3)); // divisible by 3 should therefore return Fizz
-console.log(fizzBuzz(5)); // divisible by 5 should therefore return Buzz
-console.log(fizzBuzz(15); // divisible by both 3 and 5 should therefore return FizzBuzz
-console.log(fizzBuzz(100));
+fizzBuzz(3); // divisible by 3 should therefore return Fizz
+fizzBuzz(5); // divisible by 5 should therefore return Buzz
+fizzBuzz(15); // divisible by both 3 and 5 should therefore return FizzBuzz
+
+// Second version, fizzbuzz all numbers
+
+function fizzBuzzAllNumbers() {
+	for (let i = 1; i <= 100; i++) {
+		if (i % 3 === 0 && i % 5 === 0) {
+			console.log('FizzBuzz');
+		} else if (i % 3 === 0) {
+			console.log('Fizz');
+		} else if (i % 5 === 0) {
+			console.log('Buzz');
+		} else {
+			console.log(i);
+		}
+	}
+}
+
+fizzBuzzAllNumbers();
