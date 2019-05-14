@@ -11,15 +11,15 @@ function chessBoard(white, dark) {
 		// need to get my head around to have the counters, could that be done without indices
 		if (i % 2 === 0) {
 			console.log( white);
-		} else(i % !== 0) {
+		} else(i % 2!== 0) {
 			console.log(dark);
 		}
 		// this will be for the left to right going #s
 		// counter+= "####";
 		for (let j = 0; j < 8; j++) {
-			if (i % 2 === 0) {
+			if (j % 2 === 0) {
 				console.log( white);
-			} else(i % !== 0) {
+			} else(j % 2 !== 0) {
 				console.log(dark);
 			}
 			}
