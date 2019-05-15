@@ -31,7 +31,7 @@
 // 	return chessBoard;
 // }
 
-let chessBoard = '';
+/* let chessBoard = '';
 let dark = '#';
 let white = ' ';
 // iterate over each of the 8 rows, top to bottom
@@ -50,7 +50,7 @@ for (let j = 0; j < 8; j++) {
 	}
 }
 
-chessBoard;
+chessBoard; */
 /*
 Passing this string to console.log should show something like this:
 
@@ -63,3 +63,16 @@ Passing this string to console.log should show something like this:
  # # # #
 # # # #
  */
+let size = 12;
+let board = '';
+for (let j = 0; j < size; j++) {
+	for (let i = 0; i < size; i++) {
+		if ((i + j) % 2 === 0) {
+			board += ' ';
+		} else {
+			board += '#';
+		}
+	}
+	board += '\n';
+}
+console.log(board);
