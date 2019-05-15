@@ -3,7 +3,7 @@ Write a triangle that outputs a right angle triangle,
 starting with 1 # at the left topmost to 7 #s at the right bottom
 
 */
-
+let input = '#';
 function trianglePrinter(input) {
 	for (let input = '#'; input.length < 8; input += '#') {
 		console.log(input);
