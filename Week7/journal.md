@@ -143,3 +143,5 @@
             console.log(n);
             // → 100
         `````
+    - The old keyword `var` is visible throughout the entire scope within the _function level_ 
+    - The latest variables introduced `let` and `const` - are however have _scope level_ visibility
