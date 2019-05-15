@@ -123,25 +123,32 @@
     - A `return` keyword without an expression following it causes the function to return `undefined`
     - Parameters to a function behave like regular bindings, their initial values are given by the caller of the function and not the code in the function itself
 
-- Bindings and scopes
-    - Scope is the part of the program within which the binding is visible
-    - The scope for bindings outside any function or block is the program - also known as _global_
-    : _meaning if you've one of those inside a loop, these are invisible to the code before and after the loop_**
+### Bindings and scopes
 
-    - Each scope can 'look out' into the scope around it, so x is visible inside
-    - Exception is when multiple bindings have the same name - code can see only the innermost one. 
-    : a case in point the example referring to _n_ below - we're referring to the _n/2_ of the function.
-        
-    - Illustration    
-        ``` const quarter = function(n) {
-            return n / 4;
-            };
+- Scope is the part of the program within which the binding is visible
+- The scope for bindings outside any function or block is the program - also known as _global_
+: _meaning if you've one of those inside a loop, these are invisible to the code before and after the loop_**
 
-            let n = 100;
-            console.log(quarter(100));
-            // → 25
-            console.log(n);
-            // → 100
-        `````
-    - The old keyword `var` is visible throughout the entire scope within the _function level_ 
-    - The latest variables introduced `let` and `const` - are however have _scope level_ visibility
+- Each scope can 'look out' into the scope around it, so x is visible inside
+- Exception is when multiple bindings have the same name - code can see only the innermost one. 
+: a case in point the example referring to _n_ below - we're referring to the _n/2_ of the function.
+    
+- Illustration    
+    ``` const quarter = function(n) {
+        return n / 4;
+        };
+
+        let n = 100;
+        console.log(quarter(100));
+        // → 25
+        console.log(n);
+        // → 100
+    `````
+- The old keyword `var` is visible throughout the entire scope within the _function level_ 
+    - `var` can be redeclared even in the **same scope**
+
+- The latest variables introduced `let` and `const` - are however have _scope level_ visibility
+- `let` could be reassigned, whereas `const` not
+- Arrow functions 
+- A simplified version of functions omitting the keyword `function` and only using parentheses (putting in the parameters if the function has any) and `=` sign followed by the `>`: () =>
+- Call stack - is the orderly stack of each line inside the code and called during execution. 
