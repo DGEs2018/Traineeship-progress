@@ -34,13 +34,13 @@
             - Loop - is when we run a piece of code multiple times
             - A statement starting with the keyword `while` creates a loop, followed by an expression in parentheses and then a statement, much like `if`. The loops keeps entering that statement as long as the expression produces a value that gives true when converted to Boolean.
             - Example, a program that calculates 2^10 - with two bindings, one to keep track of the result and the other to see how often this result is being multiplied by 2.
-            - ``` let result = 1;
+            - ``` let cube = 1;
                   let counter = 0;
                   while (counter < 10) {
-                      result = result * 2;
+                      cube = cube * 3;
                       counter = counter + 1;
                   }
-                  console.log(result); // 1024
+                  console.log(cube); // 59049
               ```
         - Do loop
             - ``` let yourName;
@@ -112,9 +112,9 @@
         }
 
     // A function containing multiple parameters.
-    const sqrt = function(base, square){
+    const sqrt = function(base, half){
         let result = 1;
-        for (let count = 0; count < exponent; count++) {
+        for (let count = 0; count < half; count++) {
             result *= base;
         }
         return result;
@@ -133,13 +133,13 @@
     : a case in point the example referring to _n_ below - we're referring to the _n/2_ of the function.
         
     - Illustration    
-        ``` const halve = function(n) {
-            return n / 2;
+        ``` const quarter = function(n) {
+            return n / 4;
             };
 
-            let n = 10;
-            console.log(halve(100));
-            // → 50
+            let n = 100;
+            console.log(quarter(100));
+            // → 25
             console.log(n);
-            // → 10
-        ```
+            // → 100
+        `````
