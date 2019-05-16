@@ -13,4 +13,4 @@ function longestWord(phrase) {
 	}
 	return longestByFar;
 }
-longestWord('Irrespective of how hard some programming concepts might be, learning ought to go on!');
+longestWord('Irrespective of how hard some programming concepts might be, learning ought to go on!'); // should return "Irrespective"
