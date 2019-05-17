@@ -155,4 +155,63 @@
 
 # 17.05.2019
 * Eloquent JS - Chapter 3 Function ctd.
-- 
+- Recursions
+    - Recursive functions - functions that repeatedly execute / call themselves
+    - Recursion is fine up until the stack overflows
+    - Taking performance into consideration this could be trice slower compared to loops
+    - The rule of thumbs in program design - working/corrected and easy to understand code (although inelegant)
+    - Rather than faster-performing but harder to perceive ones
+    - There are trade-offs as to prefering recursion to loops or vice-versa
+    - Let's consider a puzzle, that beginning with the number 2, adding 3 or multiplying by 4
+    ```Thinking of a potential example in mind - still expermenting...
+    function patternNumberGenerator(target){
+        function find(current, history) {
+            if (current == target){
+                return history;
+            } else if (current > target) {
+                return null;
+            } else {
+                return find(current + 3, `(${history} + 3)`) ||
+                       find(current * 4 `(${history} * 4)`);
+            }
+        }
+        return find(2, "2");
+    }
+    console.log(patternNumberGenerator(14))
+    ```
+    - Growing functions 
+        ```
+        function listGinettis(number, type){
+            let numberString = String;
+            while numberString.length < 2) {
+                numberString = "Gin0" + type;
+            }
+            console.log(`{numberString} ${type}`)
+        } 
+
+        function classGinettis(devs, designers, researchers) {
+            console.log(`{listGinettis(10, devs) Developers}`);
+            console.log(`{listGinettis(22, designers) Designers}`);
+            console.log(`{listGinettis(8, researchers) Researchers}`);
+
+        }
+        ```
+        - Functions could either be called for their 'side effects' or their 'return values', could however absolutely be called for both as well
+        - The first one in the examples above - is called for its side effects whereas the second one is called for its return value
+        - Easier to extend or combine are the later - those called for return values
+        Summary
+        - This chapter looked at three ways to write functions
+        ```
+        // Defining tripler to store a function value
+        const tripler = function (x){
+            console.log (3 * x);
+        };
+        // Declaring tripler to be a function
+        function power (x, y) {
+            return x**y;
+        }
+
+        // Make use of arrow functions
+        let percentArrowFunction = z => z / 100;
+        ```
+        
