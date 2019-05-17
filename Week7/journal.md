@@ -131,7 +131,7 @@
 
 - Each scope can 'look out' into the scope around it, so x is visible inside
 - Exception is when multiple bindings have the same name - code can see only the innermost one. 
-: a case in point the example referring to _n_ below - we're referring to the _n/2_ of the function.
+: a case in point the example referring to _n_ below - we're referring to the _n/4_ of the function.
     
 - Illustration    
     ``` const quarter = function(n) {
@@ -152,3 +152,7 @@
 - Arrow functions 
 - A simplified version of functions omitting the keyword `function` and only using parentheses (putting in the parameters if the function has any) and `=` sign followed by the `>`: () =>
 - Call stack - is the orderly stack of each line inside the code and called during execution. 
+
+# 17.05.2019
+* Eloquent JS - Chapter 3 Function ctd.
+- 
