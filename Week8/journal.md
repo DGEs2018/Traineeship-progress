@@ -60,3 +60,10 @@ Deleted branch is-even (was 9391bb51).
         let objectExample = {x:1, y:2, z:3}
         Object.assign(objectExample, {a: 4, b:5, c:6}) // returns {x: 1, y: 2, z: 3, a: 4, b: 5, c: 6}
         ```
+    - Mutability
+        - The value of numbers, strings and Boolean datatypes can not be changed.
+       ``` let myObject = {value: 'don't know what to give it'}
+        let theirObject = myObject; // Objects are said to have the same identity
+        ```
+        - myTodos(['wake up', 'drink a coffee', 'get the train', 'do the commute', 'be at work']);
+        - 
