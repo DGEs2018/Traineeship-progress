@@ -12,9 +12,12 @@ function countChar(string, character) {
 	return charQuantity;
 }
 function countBs(string) {
-	// this function makes use of the countBs function to get the count of the character.
+	// the function countBs makes use of countChar to get the count of the character.
 	return countChar(string, 'B');
 }
 
 console.log(countChar('space test', ' ')); // should return 1
 console.log(countChar('Bamboo', 'o')); // should return 2
+
+console.log(countBs('Barbershop')); // should return 1
+console.log(countBs("hey yo where's b lost?")); // should return 0, as no B exists.
