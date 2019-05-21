@@ -17,7 +17,7 @@ console.log(countBs('BaByBoy')); // should return 3
 console.log(countBs('Bamboo')); // should return 1
 
 // The same problem, but modified to work for both upper case and lowercase letter b
-function countBs(string) {
+function countAllBs(string) {
 	let upperCaseBstorer = '';
 	for (let i = 0; i < string.length - 1; i++) {
 		if (string[i] === 'B' || string[i] === 'b') {
@@ -27,5 +27,5 @@ function countBs(string) {
 	return upperCaseBstorer.length;
 }
 
-console.log(countBs('Babyboy')); // should return 3
-console.log(countBs('Bamboo')); // should return 2
+console.log(countAllBs('Babyboy')); // should return 3
+console.log(countAllBs('Bamboo')); // should return 2
