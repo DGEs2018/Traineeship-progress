@@ -33,4 +33,4 @@ function isEvenModified(num) {
 
 console.log(isEvenModified(0)); // should return true
 console.log(isEvenModified(1)); // should return false
-console.log(isEvenModified(-5)); // should return the message 'Unable to check evenness for negative values'
+console.log(isEvenModified(-5)); // should return the message 'Unable to check evenness for negative numbers'
