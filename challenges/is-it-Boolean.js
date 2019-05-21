@@ -3,12 +3,12 @@ Write a function that checks if a given value is Boolean or not and returns true
 */
 function isItBoolean(value) {
 	if (value === true || value === false) {
-		return true;
+		return 'true';
 	} else {
-		return false;
+		return 'false';
 	}
 }
 
-isItBoolean(true); // should return true
-isItBoolean(false); // should return true
-isItBoolean(10); // should return false
+console.log(isItBoolean(true)); // should return 'true'
+console.log(isItBoolean(false)); // should return 'true'
+console.log(isItBoolean(10)); // should return 'false'
