@@ -52,9 +52,9 @@ Deleted branch is-even (was 9391bb51).
         - characterstics name followed by colon and a value
         
         ```let myPersonalDetails = {
-            firstname: Dawit,
-            lastname: Ghebremedhin,
-            Addresse : Wagnerstrasse 21  
+            firstname: "Dawit",
+            lastname: "Ghebremedhin"
+            Addresse : "Wagnerstrasse 21"  
         }
         Object.assign - function that copies all properties from one to another object
 
