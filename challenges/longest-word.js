@@ -1,9 +1,8 @@
-/*
-Write a program that takes in a string parameter and returns the longest word.
-Assumptions 
-Input string is comprised of only letters and spaces.
-*/
-
+/**
+ * Write a program that takes in a string parameter and returns the longest word. Assumptions - i
+ * nput string is comprised of only letters and spaces.
+ * @param {*} phrase 
+ */
 function longestWord(phrase) {
 	// split the input sentence into separate words
 	const phraseSplitted = phrase.split(' ');
