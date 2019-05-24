@@ -14,16 +14,24 @@ function palindrome(word) {
 		//then concatenate each character one by one
 	}
 	//  now once the iteration is finished, compare the word composed, and if this is identical to the input word
-	if (word === characterHolder) {
-		// then return true
-		return true;
-		// otherwise false
-	} else {
-		return false;
-	}
+	// if (word === characterHolder) {
+	// 	// then return true
+	// 	return true;
+	// 	// otherwise false
+	// } else {
+	// 	return false;
+	// }
+	return word === characterHolder;
 }
 
-console.log(palindrome('adda')); // should return true
-console.log(palindrome('Anna')); // should return false
-console.log(palindrome('abcd')); // should return false
-console.log(palindrome('this one')); // should return false
+// console.log(palindrome('adda')); // should return true
+// console.log(palindrome('Anna')); // should return false
+// console.log(palindrome('abcd')); // should return false
+// console.log(palindrome('this one')); // should return false
+
+// TDD - Test Driven Development
+console.assert(palindrome('adda') === true, 'Checking for string adda');
+console.assert(palindrome('Anna') === false, 'Checking for string Anna');
+console.assert(palindrome('abcd') === false, 'Checking for string abcd');
+console.assert(palindrome('this one') === false, 'Checking for string this one');
+console.assert(palindrome('racecar') === true, 'Checking for string racecar');
