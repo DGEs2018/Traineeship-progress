@@ -17,4 +17,5 @@ function isEvenModified(num) {
 
 console.log(isEvenModified(50)); // should return true
 console.log(isEvenModified(75)); // should return false
-console.log(isEvenModified(-1)); // should return the message 'Unable to check evenness for negative numbers'
+console.log(isEvenModified(-50)); // should return true
+console.log(isEvenModified(-1)); // should return false
