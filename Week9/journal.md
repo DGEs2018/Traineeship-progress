@@ -30,3 +30,7 @@
     ```                         
 - Destructuring
     - helps unpack an array of objects, into a bunch of variables, which would then be more suitable
+    ```let myDestructuredArray = ['item1', 'item2', 'item3'];
+       let ['item1', 'item2', 'item3'] = myDestructuredArray
+    ```
+- JSON 
