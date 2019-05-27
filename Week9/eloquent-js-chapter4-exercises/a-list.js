@@ -16,6 +16,15 @@ function listToArray(list) {
 	}
 }
 
+function prepend(value, list) {
+	return { value, rest: list };
+}
+
+function nth(list, n) {
+	if (!list) return undefined;
+	else if (n == 0) return list.value;
+}
+
 console.assert(arrayToList([ 10, 20 ]), "This ain't working yet!");
 // → {value: 10, rest: {value: 20, rest: null}}
 /* console.log(listToArray(arrayToList([ 10, 20, 30 ])));
