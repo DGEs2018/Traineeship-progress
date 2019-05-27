@@ -13,10 +13,23 @@ function reversingAnArray(array) {
 	return emptyArray;
 }
 
-console.assert(reversingAnArray([ 'A', 'B', 'C' ]), 'Retry!');
-// → ["C", "B", "A"];
-/* let arrayValue = [ 1, 2, 3, 4, 5 ];
+console.assert(reversingAnArray([ 'A', 'B', 'C' ]), 'Retry!'); // should give → ["C", "B", "A"];
+
+/**
+  * Write another one modifying the array given as argument by reversing its elements.
+  */
+function reverseArrayInPlace(otherArr) {
+	// let count = 0;
+	for (let i = 0; i <= Math.floor(otherArr.length / 2); i++) {
+		let countToRight = otherArr[i];
+
+		otherArr[i] = otherArr[otherArr.length - 1 - i];
+		otherArr[otherArr - 1 - i] = countToRight;
+	}
+	return otherArr;
+}
+
+let arrayValue = [ 1, 2, 3, 4, 5 ];
 reverseArrayInPlace(arrayValue);
 console.log(arrayValue);
 // → [5, 4, 3, 2, 1]
- */
