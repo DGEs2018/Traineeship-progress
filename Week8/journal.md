@@ -68,17 +68,4 @@ Deleted branch is-even (was 9391bb51).
         let theirObject = myObject; // Objects are said to have the same identity
         ```
         - myTodos(['wake up', 'drink a coffee', 'get the train', 'do the commute', 'be at work']);
-        - Delete branch - read-up resources
-https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely
-
-let myStringArray = [ 'Hello', 'World' ];
-let arrayLength = myStringArray.length;
-for (let i = 0; i < arrayLength; i++) {
-	console.log(myStringArray[i]);
-	//Do something
-}
-
-let colors = [ 'red', 'green', 'blue' ];
-for (const color of colors) {
-	console.log(color);
-}
+        - 
