@@ -11,7 +11,7 @@ function arrayToList(array) {
 
 function listToArray(list) {
 	let listContainer = [];
-	for (let i = array.length - 1; i >= 0; i--) {
+	for (let node = list; node; node.test) {
 		listContainer.push(node.value);
 	}
 }

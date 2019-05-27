@@ -4,19 +4,27 @@
  * are equal when compared to a recursive call with a recursive call to deepEqual
  */
 
-function deepEqual(object1, object2) {
-	// object1 === object2;
-	if (object1 == null || object2 == null) false;
-	if (object1 !== 'object' || object2 !== 'object') return false;
-	let keyObj1 = Object.keys(object1);
-	let keyObj2 = Object.keys(object2);
+function deepEqual(one, two) {
+	// first assumption, if two objects are strictly equal, no need to compare they are already equal.
+	if (one === two) return true;
+	// if either of them is null they are not 'deeply equal'
+	if (one == null || two == null) false;
+	//if either of them isn't an object, they are not 'deeply' equal
+	if (one !== 'object' || two !== 'object') return false;
+	/* et keyObj1 = Object.keys(one);
+	let keyObj2 = Object.keys(two);
 	if (keyObj1.length != keyObj2.length) {
 		false;
-	}
-	for (let i = 0; i < sequenceObject2.length; i++) {
-		if (!keyObj2.includes(object1[i]) || !deepEqual(object1[i], object2[i])) {
+    } */
+	if (Object.keys(one).length !== Object.keys(two).length) return false;
+	for (let key in one) {
+		// if one of the properties in object one isn't found inside that of object two, then still they are not equal
+		if (!(key in two)) return false;
+
+		// if (!deepEqual(one[key], two[key])) return false;
+		/* if (!keyObj2.includes(one[i]) || !deepEqual(one[i], two[i])) {
 			return false;
-		}
+		} */
 	}
 
 	return true;
