@@ -24,8 +24,7 @@ Deleted branch is-even (was 9391bb51).
     - Dots are used for accessing properties, whereas only square brackets can be used in arrays to refer to the position of the ith element in the array
     `myTodoArray[0] // should return 'drink a coffee', the element listed second from the start`
     -  value.x - fetching the property of value named 'x'and value[x] evaluate the expression, result converted to string as property name
-    - `null` and `undefined` are the only two values that don't have properties : `undefined.length;`
-      would throw `TypeError: undefined has no properties` error
+    - `null` and `undefined` are the only two values that don't have properties. Running `undefined.length;` throws `TypeError: undefined has no properties` error
     ```
     let myListOfRandomNumbers = [1, 9, 5, 17, 40];
     console.log(myListOfRandomNumbers[1]);
@@ -40,11 +39,8 @@ Deleted branch is-even (was 9391bb51).
        console.log(myListOfRandomNumbers[6%2]) // also returns 1
     ```
     - Methods
-        - properties that hold function values
-        
+        - A number of methods could be used to manipulate arrays.
             ```
-            .toUpperCase()
-            .toLowerCase()
             .push('input') // adds an element at the end of an array
             let tenToFifteen = [10, 11, 13, 14 ,15]
             tenToFifteen.push(12)
@@ -58,23 +54,31 @@ Deleted branch is-even (was 9391bb51).
             .slice() // if the start-index is omitted the entire array will be copied
             ```
     - Objects
-        - list of properties separated by commas
+        - list of key-value pairs separated by commas
         - characterstics name followed by colon and a value
         
         ```let myPersonalDetails = {
             firstname: "Dawit",
             lastname: "Ghebremedhin"
-            Addresse : "Wagnerstrasse 21"  
+            address : "Wagnerstrasse 21"  
         }
-        Object.assign() - function that copies all properties from one to another object
+        Object.assign() - method / function that copies all properties from one to another object
 
         let objectExample = {x:1, y:2, z:3}
         Object.assign(objectExample, {a: 4, b:5, c:6}) // returns {x: 1, y: 2, z: 3, a: 4, b: 5, c: 6}
+        Equivalently, both `.slice()` & `.slice(0)` function likewise for both arrays and strings.
+        let exArray = ['Just', 'a', 'demo', 'to', 'show', 'how', 'slice', 'works'];
+        console.log(exArray.slice()); // ['Just', 'a', 'demo', 'to', 'show', 'how', 'slice', 'works']
+        console.log(exArray.slice(0)); ['Just', 'a', 'demo', 'to', 'show', 'how', 'slice', 'works']
+
+
         ```
     - Mutability
         - The value of numbers, strings and Boolean datatypes can not be changed (immutable)
         - On the contrary objects allow change
-       ``` let myObject = {value: 'don't know what to give it'}
+       ``` let myObject = {value: 'don\'t know what to give it'} or 
+           let myObject = {value: "don't know what to give it"} ( use the escape character(\) or wrap the entire phrase around double quotes so as to ignore the single quote, apostrophe)
+
         let theirObject = myObject; // Objects are said to have the same identity
         ```
 # Notes on Git workflows
@@ -109,5 +113,6 @@ Deleted branch is-even (was 9391bb51).
 
         - Deleting a branch locally as well as remotely. Below is one of the links used to refer to that
          <https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely>
-        - 
 
+
+    - Destructuring 
