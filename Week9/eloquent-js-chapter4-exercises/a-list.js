@@ -7,7 +7,13 @@ function arrayToList(array) {
 		list = { value1: array[i], rest: list };
 	}
 	return arrayHolder;
-}
+
+	/* const arrStorer = [];
+	for (let item of array) {
+		arrStorer.unshift(item);
+	}
+	return arrStorer;
+} */
 
 function listToArray(list) {
 	let listContainer = [];
@@ -27,10 +33,9 @@ function nth(list, n) {
 
 console.assert(arrayToList([ 10, 20 ]), "This ain't working yet!");
 // → {value: 10, rest: {value: 20, rest: null}}
-/* console.log(listToArray(arrayToList([ 10, 20, 30 ])));
+console.assert(listToArray(arrayToList([ 10, 20, 30 ])), "This ain't working yet!");
 // → [10, 20, 30]
-console.log(prepend(10, prepend(20, null)));
+console.assert(prepend(10, prepend(20, null)), "This ain't working yet!");
 // → {value: 10, rest: {value: 20, rest: null}}
-console.log(nth(arrayToList([ 10, 20, 30 ]), 1));
-// → 2
- */
+console.assert(nth(arrayToList([ 10, 20, 30 ]), 1), "This ain't working yet!");
+// → 20
