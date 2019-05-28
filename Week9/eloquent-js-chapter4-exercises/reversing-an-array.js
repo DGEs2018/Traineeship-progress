@@ -21,11 +21,16 @@ console.assert(reversingAnArray([ 'A', 'B', 'C' ]), 'Retry!'); // should give â†
 function reverseArrayInPlace(otherArr) {
 	// let count = 0;
 	for (let i = 0; i <= Math.floor(otherArr.length / 2); i++) {
-		let countToRight = otherArr[i];
+		// store the ith position of the input temporarily in the variable firstOne
+		let firstOne = otherArr[i];
 
+		// set the first with its mirror last element
 		otherArr[i] = otherArr[otherArr.length - 1 - i];
-		otherArr[otherArr - 1 - i] = countToRight;
+
+		// set the last element minus the current element's position to match to the already temporarily old defined one (firstOne)
+		otherArr[otherArr - 1 - i] = firstOne;
 	}
+	// return the now in place reversed array
 	return otherArr;
 }
 
