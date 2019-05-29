@@ -19,7 +19,8 @@ function listToArray(list) {
 	let listContainer = [];
 	for (let node = list; node; node.test) {
 		listContainer.push(node.value);
-	}
+    }
+    return listContainer;
 }
 
 function prepend(value, list) {
