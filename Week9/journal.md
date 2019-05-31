@@ -34,3 +34,32 @@
        let ['item1', 'item2', 'item3'] = myDestructuredArray
     ```
 - JSON 
+- JavaScript Object Notation
+- Prevents waste of data wheb
+```
+let objectLiteral = {
+    firstname: 'Dawit',
+    isAnIntern: true
+}
+console.log(objectLiteral);
+One way to send data as data would be as shown below, but this could actually take long to download, and would be bigger data
+<object>
+    <firstname>Dawit</firstname>
+    <isAnAspiringDev>true</isAnAspiringDev>
+</object>
+So we use console.log(JSON.stringify(objectLiteral)); // returns a JSON format
+```
+# 31.05.2019
+* List - Data structure
+- Javascript data structures
+    - array : an ordered collection of items
+    - object : collection of key-value pairs
+    - map : variation of objects, but with rules for the keys
+
+- Queues and stacks 
+    - Concepts more common in other programming languages (no concept of indices involved)
+    - Queue - collection of items following the first-in first-out (FIFO) order
+        - Ex. Traffic
+    - Stack - as opposed to queues follows first-in last-out precedence.
+- List
+    - Most commonly  data structure type in javascript
