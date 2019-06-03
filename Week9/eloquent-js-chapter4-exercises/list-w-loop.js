@@ -7,7 +7,7 @@
 function arrayToList(arr) {
 	let list = null;
 	for (let i = arr.length - 1; i >= 0; i--) {
-		if ((i = arr.length - 1)) {
+		if (i === arr.length - 1) {
 			list = {
 				value: arr[i],
 				rest: null
@@ -24,7 +24,7 @@ function arrayToList(arr) {
 
 console.log(arrayToList([ 1, 2, 3 ]));
 
-/* function listToArray(list) {
+function listToArray(list) {
 	let listContainer = [];
 	for (let node = list; node; node.test) {
 		listContainer.push(node.value);
@@ -48,4 +48,4 @@ console.assert(listToArray(arrayToList([ 10, 20, 30 ])), "This ain't working yet
 console.assert(prepend(10, prepend(20, null)), "This ain't working yet!");
 // → {value: 10, rest: {value: 20, rest: null}}
 console.assert(nth(arrayToList([ 10, 20, 30 ]), 1), "This ain't working yet!");
-// → 20 */
+// → 20
