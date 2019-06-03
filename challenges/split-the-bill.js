@@ -1,3 +1,7 @@
+/**
+ * Write a function to balance who has overpaid and should be compensated or who has paid less
+ * @param {*} group 
+ */
 function splitTheBill(group) {
 	// find the total amount paid // variable is converts an object to an array of arrays
 	const costInArray = Object.values(group);
