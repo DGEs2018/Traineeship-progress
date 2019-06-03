@@ -1,6 +1,5 @@
 /**
- * Write a function showing the list of people, sharing a bill with 
- * the corresponding amount of the bill. 
+ * Write a function to balance who had overpaid and should be compensated or who has paid less. 
  * @param {*} group 
  */
 function splitAnyBill(group) {
