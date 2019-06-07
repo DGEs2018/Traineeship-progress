@@ -40,6 +40,7 @@ function prepend(value, list) {
 function nth(list, n) {
 	if (!list) return undefined;
 	else if (n == 0) return list.value;
+	else return nth(list.rest, n - 1);
 }
 
 console.assert(arrayToList([ 10, 20 ]), "This ain't working yet!");
