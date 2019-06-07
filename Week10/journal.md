@@ -8,14 +8,13 @@
         ```
         // array containing my name and last name
         let myNames = ['ramblerboy', 'intown']
-        
+
         // applying the destructuring assignment
         let [name, lastname] = myNames;
 
         console.log(name);// ramblerboy
         console.log(lastname); // intown
         ```
-
     - Destructuring `null` and `undefined`
 
 ```
@@ -62,4 +61,11 @@ const { first, last } = person; // the new destructuring syntax
         - and while doing so it gives a unique identifier id for every new commit, the newly assigned (id) 
         could confuse other collaborators on the project
         <https://dev.to/isabelcmdcosta/how-to-undo-the-last-commit--31mg>
-        -
+        - How to stash untracked files
+        <https://stackoverflow.com/questions/835501/how-do-you-stash-an-untracked-file>
+        - >New versions of git now have `git stash --all` which stashes all files, including untracked and ignored files.
+          `git stash --include-untracked` no longer touches ignored files (tested on git 2.16.2). As of version 1.7.7 you 
+           can use git stash --include-untracked or git stash save -u to stash untracked files without staging them.
+
+        - Add (git add) the file and start tracking it. Then stash. Since the entire contents of the file are new, they will be 
+          stashed, and you can manipulate it as necessary.
