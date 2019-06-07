@@ -2,25 +2,22 @@
  * Write a function that builds list: with two properties, each of which containing nested propertiees 
  */
 function arrayToList(array) {
-	let arrayHolder = null;
+	let list = null;
 	for (let i = array.length - 1; i >= 0; i--) {
-		list = { value1: array[i], rest: list };
+		list = { value: array[i], rest: list };
 	}
-	return arrayHolder;
+	return list;
+}
+const list = arrayToList([ 5, 7 ]);
+console.log(list); // { value: 5, rest: { value: 7, rest: null } }
 
-	/* const arrStorer = [];
-	for (let item of array) {
-		arrStorer.unshift(item);
-	}
-	return arrStorer;
-} */
-
+console.log(list); // { value: 1, rest: { value: 2, rest: null } }
 function listToArray(list) {
 	let listContainer = [];
-	for (let node = list; node; node.test) {
+	for (let node = list; node; node.rest) {
 		listContainer.push(node.value);
-    }
-    return listContainer;
+	}
+	return listContainer;
 }
 
 function prepend(value, list) {
@@ -30,6 +27,7 @@ function prepend(value, list) {
 function nth(list, n) {
 	if (!list) return undefined;
 	else if (n == 0) return list.value;
+	else return nth(list.rest, n - 1);
 }
 
 console.assert(arrayToList([ 10, 20 ]), "This ain't working yet!");
