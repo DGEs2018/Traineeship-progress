@@ -21,8 +21,9 @@ function arrayToList(arr) {
 	}
 	return list;
 }
+const list = arrayToList([ 1, 2 ]);
 
-console.log(arrayToList([ 1, 2, 3 ]));
+console.log(list); // { value: 1, rest: { value: 2, rest: null } }
 
 function listToArray(list) {
 	let listContainer = [];
@@ -36,10 +37,10 @@ function prepend(value, list) {
 	return { value, rest: list };
 }
 
-/* function nth(list, n) {
+function nth(list, n) {
 	if (!list) return undefined;
 	else if (n == 0) return list.value;
-} */
+}
 
 console.assert(arrayToList([ 10, 20 ]), "This ain't working yet!");
 // → {value: 10, rest: {value: 20, rest: null}}
