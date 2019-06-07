@@ -21,9 +21,9 @@ function arrayToList(arr) {
 	}
 	return list;
 }
-const list = arrayToList([ 1, 2 ]);
+const list = arrayToList([ 5, 7 ]);
 
-console.log(list); // { value: 1, rest: { value: 2, rest: null } }
+console.log(list); // { value: 5, rest: { value: 7, rest: null } }
 
 function listToArray(list) {
 	let listContainer = [];
