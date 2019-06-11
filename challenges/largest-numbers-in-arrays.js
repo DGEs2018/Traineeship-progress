@@ -1,6 +1,7 @@
 /**
- * Write a function that receives an array with four nested array. 
- * The function returns an array consisting of the largest number from each provided sub-array.
+ * Write a function that receives an array with four nested array. The function returns
+ * an array consisting of the largest number from each provided sub-array.
+ * @param {*} array 
  */
 function largestOfEachArray(array) {
 	// create an empty array wherein to collect largest of each
