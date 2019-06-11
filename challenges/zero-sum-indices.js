@@ -12,15 +12,21 @@ function zeroSumIndices(arr) {
 			// find out if any of the numbers inside add up to zero
 			if (arr[i] + arr[j] === 0) {
 				// if so return these indices
-				return arrHolder.push([ i, j ]);
-			} else {
-				// else return null
-				return arrHolder;
+				arrHolder.push(i, j);
+				// arrHolder = [...arrHolder, i, j]
 			}
+			// else {
+			// 	// else return null
+			// 	return arrHolder;
+			// }
 		}
-		return arrHolder;
 	}
+	// ternary operator as a shortcut for the if statement - preceded by the statements ? (meaning if), : ( meaning else)
+	return arrHolder.length === 0 ? null : arrHolder;
 }
 
-console.log(zeroSumIndices([ 1, 2, -2, 4 ]));
-console.log(zeroSumIndices([ 1, 2, 4, 6 ]));
+console.log(zeroSumIndices([ 1, 2, -2, 4 ])); // should return [1, 2]
+console.assert(zeroSumIndices([ 1, 2, -2, 4 ]), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
+
+console.log(zeroSumIndices([ 1, 2, 4, 6 ])); // should return null
+console.assert(zeroSumIndices([ 1, 2, 4, 6 ]), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
