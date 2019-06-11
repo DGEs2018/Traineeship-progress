@@ -1,14 +1,12 @@
 /**
- * Write a method that takes in a number of minutes, and returns a string that formats the 
- * number into hours:minutes.
+ * Write a method that takes in a number of minutes, and returns a string that 
+ * formats the number into hours:minutes.
  * @param {*} minutes 
  */
 /* Steps involved
 
 input: number (in minutes)
 output: string (in format hh:mm)
-
-remark - if the minutes is smaller than 10 prepend a zero to it
 
 cover edge cases:
 negative number --> tell the user to only input positive number if they a negative one
@@ -21,30 +19,25 @@ function timeConversion(minutes) {
 	// find the remainder minutes
 	const onlyMinutes = minutes % 60;
 
-	if (typeof minutes != number) {
+	if (Number.isInteger(minutes) === false) {
 		return 'please enter only a number!';
 	}
 	if (onlyMinutes < 0) {
+		// alert the user to 'only positive number is allowed' if they enter negative one
 		return 'only positive number is allowed';
 	}
 	if (onlyMinutes < 10) {
+		// return hours and minutes concatenated with a : in the middle
+		// remark - if the minutes is smaller than 10 prepend a zero to it
 		return `${hours}:0${onlyMinutes}`;
 	}
-	// return hours and minutes concatenated with a : in the middle
-	return hours + ':' + onlyMinutes;
-
-	// remark - if the minutes is smaller than 10 prepend a zero to it
-
-	/* const onlyMinutes = minutes % 60;
-	if (onlyMinutes < 10) {
-		return hours + ':0' + onlyMinutes;
-	} */
-
-	// 5. alert the user to 'only positive number is allowed' if they enter negative one
-	if (onlyMinutes < 0) {
-		alert('only positive number is allowed');
+	if (hours < 10) {
+		// remark - if the minutes is smaller than 10 prepend a zero to it
+		return `0${hours}:${onlyMinutes}`;
 	}
+	return `${hours}:${onlyMinutes}`;
 }
 
 console.log(timeConversion(-10)); // should return: 'only positive number is allowed' - still needs a fix
 console.log(timeConversion('ten')); // should return: 'please enter only a number!'
+console.log(timeConversion(70)); // should return 01:10
