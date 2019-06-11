@@ -1,1 +1,0 @@
-# Traineeship progress
