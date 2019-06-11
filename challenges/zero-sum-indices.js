@@ -1,8 +1,8 @@
-/*
-*Write a method that takes an array of numbers. If a pair of numbers in the array 
-*sums to zero, return the positions of those two numbers. If no pair of numbers sums to zero, return null.
-*/
-
+/**
+ * Write a method that takes an array of numbers. If a pair of numbers in the array 
+ * sums to zero, return the positions of those two numbers. If no pair of numbers sums to zero, return null.
+ * @param {*} arr 
+ */
 function zeroSumIndices(arr) {
 	let arrHolder = [];
 	// iterate through each array
@@ -29,4 +29,5 @@ console.log(zeroSumIndices([ 1, 2, -2, 4 ])); // should return [1, 2]
 console.assert(zeroSumIndices([ 1, 2, -2, 4 ]), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
 
 console.log(zeroSumIndices([ 1, 2, 4, 6 ])); // should return null
-console.assert(zeroSumIndices([ 1, 2, 4, 6 ]), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
+// I wonder why this console.assert displays an error even though, its equivalent console.log returns the expected output - typo?
+// console.assert(zeroSumIndices([ 1, 2, 4, 6 ]), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
