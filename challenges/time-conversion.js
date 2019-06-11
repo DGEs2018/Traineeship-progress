@@ -1,8 +1,7 @@
 /**
- * 
- * @param {*} minutes 
  * Write a method that takes in a number of minutes, and returns a string that formats the 
  * number into hours:minutes.
+ * @param {*} minutes 
  */
 /* Steps involved
 
