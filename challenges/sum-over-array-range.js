@@ -1,7 +1,7 @@
 /**
  * Write a function that receives an array of two numbers as argument and 
  * returns the sum of those two numbers and all numbers between them.
- * @param {*} inputArr 
+ * @param {an array of two numbers} inputArr 
  */
 
 function sumWithinRange(inputArr) {
