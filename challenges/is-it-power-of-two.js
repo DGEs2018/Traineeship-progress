@@ -1,7 +1,7 @@
 /**
  * Write a method that takes in a number and returns true if it is a power of 2.
  * Otherwise, return false.
- * @param {*} num 
+ * @param {number} num 
  */
 const isPowerOfTwo = (num) => {
 	// if the number is 1, return true, as any number to the power of zero is 1
