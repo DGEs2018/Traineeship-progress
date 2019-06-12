@@ -1,6 +1,6 @@
 /**
  * Given an array of strings, count the number of times each string occurs and keep track of it.
- * @param {*} arr, input array
+ * @param {array of strings} arr, input array
  */
 // using ES6 syntax, arrow function
 const elementCounter = (arr) => {
