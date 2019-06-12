@@ -2,7 +2,7 @@
  * create a function that takes an integer n > 1 and returns an array with all of the integers divisors
  * (except for 1 and the number itself), from the smallest to leargest. If the number is prime return the 
  * string'(integer)isprime'
- * @param {*} inputnum 
+ * @param {an integer(number) greater than zero} inputnum 
  */
 function divisors(inputnum) {
 	// get an empty holder ready to hold results in
