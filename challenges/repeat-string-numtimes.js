@@ -1,8 +1,8 @@
 /**
  * Repeat a given string (first argument) num times (second argument). 
  * Return an empty string if num is not a positive number.
- * @param {*} str 
- * @param {*} num 
+ * @param {string} str 
+ * @param {num} num 
  */
 function repeatStrNtimes(str, num) {
 	// set up a variable as an empty string, within which to store the output
