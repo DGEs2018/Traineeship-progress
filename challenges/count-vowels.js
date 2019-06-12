@@ -2,7 +2,7 @@
  * Write a method that takes a string and returns the number of vowels
  * in the string. You may assume that all the letters are in lower case 
  * and you may treat “y” as a consonant.
- * @param {*} string 
+ * @param {string} string 
  */
 function vowelCounter(string) {
 	// store the list of vowels in a string as a variable 'allVowels'
