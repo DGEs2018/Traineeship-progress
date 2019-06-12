@@ -1,7 +1,7 @@
 /**
  * Write a function that receives an array with four nested array. The function returns
  * an array consisting of the largest number from each provided sub-array.
- * @param {*} array 
+ * @param {an array containing multiples of arrays inside} array 
  */
 function largestOfEachArray(array) {
 	// create an empty array wherein to collect largest of each
@@ -14,6 +14,6 @@ function largestOfEachArray(array) {
 	// return the now filled
 	return arrayCollector;
 }
-let arrayInput = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ];
+let arrayInput = [ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ], [ 10, 11, 12 ] ];
 console.log(largestOfEachArray(arrayInput)); // should return [3, 6, 9]
 console.assert(largestOfEachArray(arrayInput), 'incorrect'); // should print nothing if the code works, but should throw 'assertion failed: incorrect' error message if any error is encouuntered
