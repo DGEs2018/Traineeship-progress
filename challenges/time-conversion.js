@@ -1,7 +1,7 @@
 /**
  * Write a method that takes in a number of minutes, and returns a string that 
  * formats the number into hours:minutes.
- * @param {*} minutes 
+ * @param {number} minutes 
  */
 /* Steps involved
 
@@ -25,13 +25,11 @@ function timeConversion(minutes) {
 	if (onlyMinutes < 0) {
 		// alert the user to 'only positive number is allowed' if they enter negative one
 		return 'only positive number is allowed';
-	}
-	if (onlyMinutes < 10) {
-		// return hours and minutes concatenated with a : in the middle
+	} else if (hours < 10 && onlyMinutes < 10) {
 		// remark - if the minutes is smaller than 10 prepend a zero to it
-		return `${hours}:0${onlyMinutes}`;
-	}
-	if (hours < 10) {
+		return `0${hours}:0${onlyMinutes}`;
+	} else if (hours < 10) {
+		// return hours and minutes concatenated with a : in the middle
 		// remark - if the minutes is smaller than 10 prepend a zero to it
 		return `0${hours}:${onlyMinutes}`;
 	}
@@ -40,4 +38,4 @@ function timeConversion(minutes) {
 
 console.log(timeConversion(-10)); // should return: 'only positive number is allowed' - still needs a fix
 console.log(timeConversion('ten')); // should return: 'please enter only a number!'
-console.log(timeConversion(70)); // should return 01:10
+console.log(timeConversion(57)); // should return 01:10
