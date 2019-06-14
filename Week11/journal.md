@@ -35,7 +35,7 @@
         - native node modules need to be recompiled when deploying to a platform different from that of the development machine. This could require calling `npm rebuild` that though causes the server to become out of sync
     - cons
         - npm package might be removed by its author from the npm registry
-        - a case in point is [![left-pad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/)] in 2016 : such a case might restrict access to a particular functionality.
+        - a case in point is [left-pad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/) in 2016 : such a case might restrict access to a particular functionality.
         - npm is not guaranteed to live at all time, so committing along could save future trouble in such a case
         - everytime you use a package, create fork on GitHub and keep updating that once in a while (automation option also available)
         - but that's impractical due to its huge dependencies
