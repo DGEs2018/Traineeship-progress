@@ -12,6 +12,7 @@
         - pixels - used to be very commonly especially before responsive designs were introduced
             - disadvantage -  unit isn't scalable. Meaning pixel size is fixed and doesn't change according as viewport size varies
         - so then em, rem, percent and viewport units were introduced
+        - [The entire blog for more details](https://medium.com/@madhum86/css-font-sizing-pixels-vs-em-vs-rem-vs-percent-vs-viewport-units-b1485716afe7)
 #18.06.2019
 * More on Sass
 - CSS sourcemaps and in-browser Sass editing 
@@ -30,3 +31,9 @@
     - margin - occupies the outermost above the border
 - Positioning in CSS
     - 
+* Building layout
+- Having an overview of the layout of a given a design could help roughly simplify before tackling the details. The list below should help categorize general overview
+    - header tag
+    - section tag
+    - footer tag
+    - navigation tag
