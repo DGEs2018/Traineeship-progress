@@ -7,8 +7,8 @@
     - Unmatching path of an image could find `Refused to apply style from...is not a supported stylesheet MIME type, and strict MIME checking is enabled.`
     - viewport units
         - em, rem, vh, vw
-        - vw - viewport width in percentage
-        - vh - viewport height in percentage
+        - vw - viewport width in percentage (1vw - 1% of viewport width)
+        - vh - viewport height in percentage (1vh - 1% of viewport height)
         - pixels - used to be very commonly especially before responsive designs were introduced
             - disadvantage -  unit isn't scalable. Meaning pixel size is fixed and doesn't change according as viewport size varies
         - so then em, rem, percent and viewport units were introduced
