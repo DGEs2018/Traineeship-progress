@@ -29,11 +29,21 @@
     - padding - which sits between the padding and the margin
     - border - sits between padding and margin
     - margin - occupies the outermost above the border
-- Positioning in CSS
-    - 
+
 * Building layout
 - Having an overview of the layout of a given a design could help roughly simplify before tackling the details. The list below should help categorize general overview
     - header tag
     - section tag
     - footer tag
     - navigation tag
+# 19.06.2019
+* Positioning in CSS
+    - replacing `position: relative; or position: absolute` and manipulating with `margins & paddings` could be a better to practice to position elements
+    - flexbox is another handier method (one dimensional left to right or top to )
+        - `property selector id or class {justify-content: flex-start; or flex-end; or center; or space-between; space-around}` left to right 
+        - `property selector id or class {align-items: flex-start; or flex-end; or center; or space-between; space-around}` top to bottom
+    - css grid layout
+* BEM101 (Block, Element, Modifier methodology)
+- Why we should follow BEM
+    - Easier readability and association of parent-child when producing a new style of a component
+    - When only looking at 
