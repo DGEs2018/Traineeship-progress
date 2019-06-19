@@ -23,20 +23,22 @@
     ```
     - Nesting
         - Normal CSS doesn't allow a nested hierarchy
-        - Sass enables you nest CSS selectors enhancing readability
+        - Sass enables the nesting of CSS selectors enhancing readability
+        - Avoids  repetition (i.e. in favour of DRY - making use of variables, mixins, import etc.)
 # 14.06.2019
-- Should node_modules folder be committed or not ?
-    - pros
+- Should the `node_modules` folder be committed or not ?
+    - pros for ignoring `node_modules` (storing them under `node_modules`)
         - adding a new package brings `package.json` & `package-lock.json`
         - while updating however only `package-lock.json` is stored
         - avoids accumulating extra hundreds of MBs of dependencies within the repo. This among other things significantly slows down when switching branchces and checking out codes
-        - merge conflicts involving dependency's code might need so much time
-        - a PR or merge when changing the dependencies to involves a lengthy process and at some point might not show diff to its fullest
+        - merge conflicts involving dependency's code might as well require so much time
+        - a PR or merge when changing the dependencies involves a lengthy process and at some point might not show diff to its fullest
         - native node modules need to be recompiled when deploying to a platform different from that of the development machine. This could require calling `npm rebuild` that though causes the server to become out of sync
-    - cons
+    - cons against ignoring `node_modules` (storing them under `node_modules`)
         - npm package might be removed by its author from the npm registry
-        - a case in point is [left-pad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/) in 2016 : such a case might restrict access to a particular functionality.
-        - npm is not guaranteed to live at all time, so committing along could save future trouble in such a case
-        - everytime you use a package, create fork on GitHub and keep updating that once in a while (automation option also available)
-        - but that's impractical due to its huge dependencies
-        - offers a possibility of having a private repository server where all dependencies could be hosted
+        - a case in point is [left-pad incident](https://www.theregister.co.uk/2016/03/23/npm_left_pad_chaos/)] in 2016 : such a case might restrict access to a particular functionality.
+        - npm (like many others that become deprecated or even updated) is not guaranteed to live at all times, so committing along could save future trouble in such a case
+            - mitigation :- everytime you use a package, create fork on GitHub and while updating regularly (automation option also available)
+            - but that's impractical due to more nested dependencies
+            - offers a possibility of having a private repository server where all dependencies could be hosted
+- [Here the source blog](https://flaviocopes.com/should-commit-node-modules-git/)
