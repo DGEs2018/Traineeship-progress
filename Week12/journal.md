@@ -38,7 +38,7 @@
     - navigation tag
 # 19.06.2019
 * Positioning in CSS
-    - replacing `position: relative; or position: absolute` and manipulating with `margins & paddings` could be a better to practice to position elements
+    - replacing `position: relative; or position: absolute` and manipulating with `margins & paddings` could be a better practice for positioning elements
     - flexbox is another handier method (one dimensional left to right or top to )
         - `property selector id or class {justify-content: flex-start; or flex-end; or center; or space-between; space-around}` left to right 
         - `property selector id or class {align-items: flex-start; or flex-end; or center; or space-between; space-around}` top to bottom
@@ -47,3 +47,33 @@
 - Why we should follow BEM
     - Easier readability and association of parent-child when producing a new style of a component
     - When only looking at 
+# 20.06.2019
+* Flexbox
+- To use flexbox 
+    - The container parent initially needs to be set to display-flex
+    - (a parent could have a certain height and width specified)
+    - `flex-wrap`
+- More flexbox properties
+    - align-contents
+    - align-items
+    - align-self
+- Em vs Rem
+    - Em cascades as it primarily relies on the parent block
+    - Rem is a better practice, as it's dependent on the given defined pixel size in the root
+
+# 21.06.2019 
+* More on Flexbox 
+-  inside of a block of 
+    ```
+    #example {
+    display: flex; 
+    justify-content: flex-start; //aligns items to the left most of the container block
+    justify-content: center; // centers items relative to the container block
+    justify-content: flex-end; // aligns items to the right most of the container block
+    justify-content: space-around; // evenly spreads the items, with equal spacing 
+    justify-content: space-between; // splits items so they are equally spaced in the middle
+    (justify-content: aligns items along the main axis)
+    align-items: flex-end; or flex-start; or center; or baseline; or stretch; //aligns vertically aligns items along the cross axis accordingly (a combination of justify-content and align-items could also be used)
+    place-items: a shorthand for flex-flow and 
+    }
+    ```
