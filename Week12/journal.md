@@ -85,7 +85,7 @@
     flex-shrink: 1 or 2 or 3;  // space becomes shrunk depending on the factor following the number of items.
     flow-wrap: wrap; // allows for flex items to flow onto multiple lines (nowrap is the default)
     align-items: flex-end; or flex-start; or center; or baseline; or stretch; //aligns vertically aligns items along the cross axis accordingly (a combination of justify-content and align-items could also be used)
-    place-items: a shorthand for flex-flow and 
+    place-items: a shorthand for `align-items` and `justify-items` properties respectively. When the latter isn't used, it takes the first one for both.
     order: ;// sets the order so that items are sorted in ascending order (also negative values are allowed)
     }
     ```
