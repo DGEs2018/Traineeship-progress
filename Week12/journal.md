@@ -45,8 +45,9 @@
     - css grid layout
 * BEM101 (Block, Element, Modifier methodology)
 - Why we should follow BEM
-    - Easier readability and association of parent-child when producing a new style of a component
-    - When only looking at 
+    - for easier readability and association of parent-child when producing a new style of a component
+    - when only looking at html files, it's easy to lose track of which class names stands for which sections
+    - the above mentioned associativities contribute to an easier time for code reuse and maintainability
 # 20.06.2019
 * Flexbox
 - To use flexbox 
@@ -60,6 +61,7 @@
 - Em vs Rem
     - Em cascades as it primarily relies on the parent block
     - Rem is a better practice, as it's dependent on the given defined pixel size in the root
+    - the font size should be defined at root of the html `:root {font size: 16px}` or else the default font-size value browsers take is assumed, which is normally 16px
 
 # 21.06.2019 
 * More on Flexbox 
@@ -73,7 +75,17 @@
     justify-content: space-around; // evenly spreads the items, with equal spacing 
     justify-content: space-between; // splits items so they are equally spaced in the middle
     (justify-content: aligns items along the main axis)
+    flex-direction: row; // from left to right 
+    flex-direction: row-reverse; // from left to right in reverse order
+    flex-direction: column; // from top to bottom 
+    flex-direction: column-reverse; // from top to bottom in reverse order 
+    flex-flow: row wrap or column wrap; // shorthand property for `flex-direction` and `flex-wrap`allows for flexibility of items on the main or cross axis, to follow multiple lines  (also works of row-reverse and column reverse)
+    flex-grow: 1; controls how much space how much of space should be assigned. The rest of the space comprises the difference between the container and of the flex items altogether.
+    flex-shrink: 0; // means, no shrink is applied.
+    flex-shrink: 1 or 2 or 3;  // space becomes shrunk depending on the factor following the number of items.
+    flow-wrap: wrap; // allows for flex items to flow onto multiple lines (nowrap is the default)
     align-items: flex-end; or flex-start; or center; or baseline; or stretch; //aligns vertically aligns items along the cross axis accordingly (a combination of justify-content and align-items could also be used)
     place-items: a shorthand for flex-flow and 
+    order: ;// sets the order so that items are sorted in ascending order (also negative values are allowed)
     }
     ```
