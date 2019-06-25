@@ -1,8 +1,13 @@
 #24.06.2019
 * CSS reset vs normalizing
 - Why should we CSS reset or normalize
-    - Different browsers have  a set of default stylesdifferent property preferences
+    - Different browsers have  a set of default stylesdifferent property preferences, 
+        - Disadvantage
+            - this might hinder users from implementing their own styles
     - but when the users themselves wish to use their own style and have control over the styles, either CSS reset or normalizing comes in handy
+        - Advantage
+            - user are at liberty and have more control applying their own styles on their choice of selectors
+
 
 - Partials (in Sass)
     - Definition
@@ -10,7 +15,7 @@
         - A case in point where these could come handy is for instance when applying styling targeting certain selectors
         - Example - CSS reset properties 
         - Helps modularize and easier maintainance
-    - Steps involved to set up partial Sass files
+    - Setting up partial Sass files
         - set up a folder called
         - create a file that starts only with _ ()
         - the underscore signals the Sass file that this should not be generated into a .css output file (like it normally does)
