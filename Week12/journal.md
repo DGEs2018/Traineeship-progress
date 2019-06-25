@@ -90,4 +90,4 @@
     order: ;// sets the order so that items are sorted in ascending order (also negative values are allowed)
     }
     ```
-    [Reference link focusing on the properties to be used for the flex container(parent element) as well as the flex items(child elements)](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+    - Here is [a reference link](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) that guides through  and distinguishes between the properties to be used for the flex container(parent element) and the flex items (child elements)
