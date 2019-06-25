@@ -13,7 +13,7 @@
             - disadvantage -  unit isn't scalable. Meaning pixel size is fixed and doesn't change according as viewport size varies
         - so then em, rem, percent and viewport units were introduced
         - [The entire blog for more details](https://medium.com/@madhum86/css-font-sizing-pixels-vs-em-vs-rem-vs-percent-vs-viewport-units-b1485716afe7)
-#18.06.2019
+# 18.06.2019
 * More on Sass
 - CSS sourcemaps and in-browser Sass editing 
     - CSS sourcemaps are the bridge between the browser and pre-processor such as Sass, so that the browser understands
