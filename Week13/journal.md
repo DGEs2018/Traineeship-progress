@@ -29,4 +29,7 @@
         - difference is that vh scales and adapts to any device
         - whereas percentage sticks to width and height parameters given
         - 
-- [Creating modular and scalable CSS](https://www.creativebloq.com/css3/create-modular-and-scalable-css-9134351)
+- [Here's a blog on creating modular and scalable CSS](https://www.creativebloq.com/css3/create-modular-and-scalable-css-9134351)
+
+- Best practices or approaches to organize CSS
+[Methods to Organize CSS](https://css-tricks.com/methods-organize-css/) 
