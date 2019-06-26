@@ -33,3 +33,13 @@
 
 - Best practices or approaches to organize CSS
 [Methods to Organize CSS](https://css-tricks.com/methods-organize-css/) 
+
+# 26.06.2019
+* Last tids of bits learnt from the landing-page implementation
+- CSS partials should be placed at the root folder, so it serves all of the tasks from now on
+- block names referred when applying the BEM methodology shouldn't be generic but rather particularly reflecting the content of the elements inside.
+- using classes is a good convention for styling - avoid IDs
+- <br/> element is a bad practice to use it as a spacing
+    - better practices are either margins or paddings
+- when putting in links refering to fonts inside html, best practice is bundling them all inside one link
+    - this minimizes the number of requests to the server to once
