@@ -43,3 +43,4 @@
     - better practices are either margins or paddings
 - when putting in links refering to fonts inside html, best practice is bundling them all inside one link
     - this minimizes the number of requests to the server to once
+    - defining the font-size at the root-folder, specify the exact font size using `:root {font-size: 16px;}`
