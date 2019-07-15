@@ -71,8 +71,8 @@ For `<h1>` styles to act the same for all browsers, `normalize.css` defines the 
 </div>
 ```
 Ways with the
-<summary> and <details> HTML tags
-[Accordion with HTML Elements <details> and <summary>] (https://www.imarketinx.de/artikel/html-accordion-details-and-summary.html)
+`<summary>` and `<details>` HTML tags
+[Accordion with HTML Elements `<details>` and `<summary>`] (https://www.imarketinx.de/artikel/html-accordion-details-and-summary.html)
 
 # 10.07.2019
 ## Javascript in the browser
