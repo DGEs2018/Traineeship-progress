@@ -28,7 +28,8 @@
                 - bigger font-size
                 - margin on the top & bottom
 - An example of <h1> default styles in chrome
-```h1 {
+```
+h1 {
     display: block;
     font-size: 2em;
     margin-block-start: 0.67em;
@@ -36,8 +37,9 @@
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
-}```
-
+}
+```
+- [Blog post - Normalize CSS or CSS Reset](https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e)
 - one real-life example 
 '*Chrome, Safari and Firefox* render <h1> tags that are inside an <article>/ <aside>/ <nav>/ <section> tag with a font-size that is smaller than an independent <h1> tag, and with a different margin size.'
 
@@ -54,7 +56,7 @@ For <h1> styles to act the same for all browsers, `normalize.css` defines the  I
 
 
  ```
- <div class="wrap-collabsible">
+ <div class="wrap-collapsible">
     <input id="collapsible" class="toggle" type="checkbox">
     <label for="collapsible" class="lbl-toggle">More Info</label>
    <div class="collapsible-content">
@@ -71,3 +73,133 @@ For <h1> styles to act the same for all browsers, `normalize.css` defines the  I
 Ways with the
 <summary> and <details> HTML tags
 [Accordion with HTML Elements <details> and <summary>] (https://www.imarketinx.de/artikel/html-accordion-details-and-summary.html)
+
+# 10.07.2019
+## Javascript in the browser
+### Methods
+  - the `this` keyboard (often refers to the immediately above placed function or variable.method)
+  - querySelector
+  - querySelectAll
+  - getElementById
+  - getElementsByClassName (because elements is plural, it must have contained a list of items, in which case the user has to use indexing, [i] to refer to the target element first, second etc.)
+  - getElementByTagName
+  - adding an icon beside a button
+  - document.getElementById("myList").firstElementChild.innerHTML;
+  - The firstElementChild property returns the first child element of the specified element.
+  - 
+  - maxHeight property - document.getElementById("myDIV").style.maxHeight = "15px"; // set the max height of a <div> element
+    - has effect only on block-level elements or on elements with absolute or fixed position
+  - classList.toggle
+  - nextElementSibling (targets the next sibling element within the target parent)
+  - previousElementSibling (targets the previous sibling element within the target parent)
+
+
+The difference between this property and `firstChild`, is that `firstChild` returns the first child node as an element node, a text node or a comment node (depending on which one comes first), while `firstElementChild` returns the first child node as an element node (ignores text and comment nodes).
+
+This property is read-only.
+
+Tip: Use the children property to return any child element of a specified element. children[0] will produce the same result as firstElementChild.
+
+Tip: To return the last child element of a specified element, use the lastElementChild property.
+
+
+
+ 
+ <!-- accordions[i].onclick = function(){
+// it's going to go down the DOM one element, starting from the button the nextElementSibling is going to be the content inside it
+// this represents the targeted accordion / that is defined right before that
+  const content = this.nextElementSibling
+  if(content.style.maxHeight){
+    content.style.maxHeight = null
+  } else {
+    content.style.maxHeight = content.scrollHeight + "px";
+    console.log('Wonder which one this is', this)
+  }
+}
+
+.accordion-content {
+  padding: 0 20px;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solida whitesmoke;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.glyphicon::before {
+  content: '\f067';
+  font-family: "fontawesome";
+  font-size: 16px;
+  float: left;
+}
+.glyphicon.is-open::before {
+  content: '\f068';
+  font-family: "fontawesome";
+  font-size: 16px;
+  float: left;
+}
+ -->
+
+
+# 11.07.2019
+## Designed version vs implemented version
+  - Put the implemented version of next to the suggested design by the designer
+### DOM manipulation
+  - a way to access and manipulate the HTML structure using JS
+  - [Here is everything about DOM manipulation](https://www.freecodecamp.org/news/dom-manipulation-in-vanilla-js-2036a568dcd9/)
+  - accessing / looking up the elements
+    - finding single element
+      - `document.getElementById('idname')`
+      - `document.querySelector`
+    - finding multiple of them
+      - `.document.getElementsByClassName`
+      - `.document.querySelectorAll`
+  - traversing the DOM
+    - `.firstChild`
+    - `.lastChild`
+    - `.nextElementSibling`
+    - `.previousElementSibling`
+      - Demo
+      ```
+      // .html file
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h2 id="title">Node.nextElementSibling - JS DOM - test</h2>
+  <ul id="myList">
+    <li>Firstlist</li>
+    <li>Secondlist</li>
+    <li>Thirdlist</li>
+  </ul>
+  
+</body>
+</html>
+- JS file
+```
+<!-- selects any <li> that is the first element of its type among its siblings -->
+const firstItem = document.querySelector('#myList > li:first-of-type');
+console.log(firstItem); // returns <li>Firstlist</li>
+const secondItem = firstItem.nextElementSibling;
+console.log(secondItem); // returns <li>Secondlist</li>
+
+```
+
+![Document Object Model](Document_Object_Model.jpg)
+
+  - Targetting and updating elements
+    - Getting or setting text content
+    - nodeValue or textContent
+      - nodeValue
+        - set or get the *text content* of a text node
+      - textContent
+        - used to set or get the text of a *containing element*
+        
+# 12.07.2019
+## Reusing classes
+### Different elements sharing the same classes
+  - saving the same class to apply to different elements / sections could help refactor or be less redundant with codes in CSS
+ [Link to show a demonstration](https://codepen.io/anon/pen/wLLvmg)
