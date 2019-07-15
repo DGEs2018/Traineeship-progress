@@ -179,8 +179,7 @@ Tip: To return the last child element of a specified element, use the lastElemen
 </body>
 </html>
 - JS file
-```
-<!-- selects any <li> that is the first element of its type among its siblings -->
+```<!-- selects any <li> that is the first element of its type among its siblings -->
 const firstItem = document.querySelector('#myList > li:first-of-type');
 console.log(firstItem); // returns <li>Firstlist</li>
 const secondItem = firstItem.nextElementSibling;
