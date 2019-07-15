@@ -41,7 +41,7 @@ h1 {
 ```
 - [Blog post - Normalize CSS or CSS Reset](https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e)
 - one real-life example 
-'*Chrome, Safari and Firefox* render <h1> tags that are inside an <article>/ <aside>/ <nav>/ <section> tag with a font-size that is smaller than an independent <h1> tag, and with a different margin size.'
+- *Chrome, Safari and Firefox* render `<h1>` tags that are inside an `<article>`/ `<aside>`/ `<nav>`/ `<section>` tag with a font-size that is smaller than an independent `<h1>` tag, and with a different margin size.
 
 The Internet Explorer and EDGE browsers apply different style. Although it would make sense that the styles in `normalize.css`. But it isn't possible to target IE / EDGE.
 
@@ -102,9 +102,6 @@ Tip: Use the children property to return any child element of a specified elemen
 
 Tip: To return the last child element of a specified element, use the lastElementChild property.
 
-
-
- 
  <!-- accordions[i].onclick = function(){
 // it's going to go down the DOM one element, starting from the button the nextElementSibling is going to be the content inside it
 // this represents the targeted accordion / that is defined right before that
@@ -138,8 +135,6 @@ Tip: To return the last child element of a specified element, use the lastElemen
   float: left;
 }
  -->
-
-
 # 11.07.2019
 ## Designed version vs implemented version
   - Put the implemented version of next to the suggested design by the designer
