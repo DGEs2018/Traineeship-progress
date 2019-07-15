@@ -45,7 +45,7 @@ h1 {
 
 The Internet Explorer and EDGE browsers apply different style. Although it would make sense that the styles in `normalize.css`. But it isn't possible to target IE / EDGE.
 
-For <h1> styles to act the same for all browsers, `normalize.css` defines the  IE/EDGE styles to be applied by all browsers.
+For `<h1>` styles to act the same for all browsers, `normalize.css` defines the  IE/EDGE styles to be applied by all browsers.
 
 ```
 /* 
