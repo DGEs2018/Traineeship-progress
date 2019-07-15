@@ -187,6 +187,8 @@ console.log(secondItem); // returns <li>Secondlist</li>
 ```
 
 ![Document Object Model](Document_Object_Model.jpg)
+- This DOM image above corresponds to the screenshot of the HTML file below.
+![The HTML matching the DOM above](HTML_match_for_DOM.jpg)
 
   - Targetting and updating elements
     - Getting or setting text content
