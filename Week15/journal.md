@@ -185,7 +185,6 @@ const firstItem = document.querySelector('#myList > li:first-of-type');
 console.log(firstItem); // returns <li>Firstlist</li>
 const secondItem = firstItem.nextElementSibling;
 console.log(secondItem); // returns <li>Secondlist</li>
-
 ```
 
 ![Document Object Model](Document_Object_Model.jpg)
