@@ -15,7 +15,7 @@
     - example - CSS reset properties 
     - Helps modularize and easier maintainance
 - Setting up partial Sass files
-    - set up a folder called
+    - set up a folder called partials
     - create a file that starts only with _ ()
     - the underscore signals the Sass file that this should not be generated into a .css output file (like it normally does)
     - import this file in the scss file `@import "complete file path this time ignoring the _";`
