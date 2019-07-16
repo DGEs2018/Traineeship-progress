@@ -28,7 +28,8 @@
                 - bigger font-size
                 - margin on the top & bottom
 - An example of <h1> default styles in chrome
-```
+
+```css
 h1 {
     display: block;
     font-size: 2em;
@@ -39,6 +40,7 @@ h1 {
     font-weight: bold;
 }
 ```
+
 - [Blog post - Normalize CSS or CSS Reset](https://medium.com/@elad/normalize-css-or-css-reset-9d75175c5d1e)
 - one real-life example 
 - *Chrome, Safari and Firefox* render `<h1>` tags that are inside an `<article>`/ `<aside>`/ `<nav>`/ `<section>` tag with a font-size that is smaller than an independent `<h1>` tag, and with a different margin size.
@@ -47,15 +49,14 @@ The Internet Explorer and EDGE browsers apply different style. Although it would
 
 For `<h1>` styles to act the same for all browsers, `normalize.css` defines the  IE/EDGE styles to be applied by all browsers.
 
-```
+```css
 /* 
   Correct the font size and margin on `h1` elements within `section`  and `article` contexts in Chrome, Firefox, and Safari.
 */
  h1 {  font-size: 2em;  margin: 0.67em 0;} 
  ```
 
-
- ```
+ ```html
  <div class="wrap-collapsible">
     <input id="collapsible" class="toggle" type="checkbox">
     <label for="collapsible" class="lbl-toggle">More Info</label>
@@ -78,63 +79,27 @@ Ways with the
 ## Javascript in the browser
 ### Methods
   - the `this` keyboard (often refers to the immediately above placed function or variable.method)
-  - querySelector
-  - querySelectAll
-  - getElementById
-  - getElementsByClassName (because elements is plural, it must have contained a list of items, in which case the user has to use indexing, [i] to refer to the target element first, second etc.)
-  - getElementByTagName
-  - adding an icon beside a button
-  - document.getElementById("myList").firstElementChild.innerHTML;
+  - `querySelector`
+  - `querySelectAll`
+  - `getElementById`
+  - `getElementsByClassName` (because elements is plural, it must have contained a list of items, where indices come in to play, represented by [i] referring to the position of target element, i.e first, second etc.)
+  - `getElementByTagName`
+  - `.firstElementChild.innerHTML`
   - The firstElementChild property returns the first child element of the specified element.
   - 
-  - maxHeight property - document.getElementById("myDIV").style.maxHeight = "15px"; // set the max height of a <div> element
-    - has effect only on block-level elements or on elements with absolute or fixed position
-  - classList.toggle
-  - nextElementSibling (targets the next sibling element within the target parent)
-  - previousElementSibling (targets the previous sibling element within the target parent)
+  - `maxHeight` property - document.getElementById("myDIV").style.maxHeight = "15px"; // set the max height of a <div> element
+  - `maxHeight` has effect only on block-level elements or on elements with absolute or fixed position
+  - `classList.toggle`
+  - `nextElementSibling` (targets the next sibling element within the target parent)
+  - `previousElementSibling` (targets the previous sibling element within the target parent)
 
 
-The difference between this property and `firstChild`, is that `firstChild` returns the first child node as an element node, a text node or a comment node (depending on which one comes first), while `firstElementChild` returns the first child node as an element node (ignores text and comment nodes).
+>The difference between this property and `firstChild`, is that `firstChild` returns the first child node as an element node, a text node or a comment node (depending on which one comes first), while `firstElementChild` returns the first child node as an element node (ignores text and comment nodes).
 
-This property is read-only.
+>Tip: Use the children property to return any child element of a specified element. children[0] will produce the same result as firstElementChild.
 
-Tip: Use the children property to return any child element of a specified element. children[0] will produce the same result as firstElementChild.
+>Tip: To return the last child element of a specified element, use the lastElementChild property.
 
-Tip: To return the last child element of a specified element, use the lastElementChild property.
-
- <!-- accordions[i].onclick = function(){
-// it's going to go down the DOM one element, starting from the button the nextElementSibling is going to be the content inside it
-// this represents the targeted accordion / that is defined right before that
-  const content = this.nextElementSibling
-  if(content.style.maxHeight){
-    content.style.maxHeight = null
-  } else {
-    content.style.maxHeight = content.scrollHeight + "px";
-    console.log('Wonder which one this is', this)
-  }
-}
-
-.accordion-content {
-  padding: 0 20px;
-  border-left: 1px solid whitesmoke;
-  border-right: 1px solida whitesmoke;
-  max-height: 0;
-  overflow: hidden;
-}
-
-.glyphicon::before {
-  content: '\f067';
-  font-family: "fontawesome";
-  font-size: 16px;
-  float: left;
-}
-.glyphicon.is-open::before {
-  content: '\f068';
-  font-family: "fontawesome";
-  font-size: 16px;
-  float: left;
-}
- -->
 # 11.07.2019
 ## Designed version vs implemented version
   - Put the implemented version of next to the suggested design by the designer
@@ -154,8 +119,8 @@ Tip: To return the last child element of a specified element, use the lastElemen
     - `.nextElementSibling`
     - `.previousElementSibling`
       - Demo
-      ```
-      // .html file
+
+```html
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -169,12 +134,13 @@ Tip: To return the last child element of a specified element, use the lastElemen
     <li>Firstlist</li>
     <li>Secondlist</li>
     <li>Thirdlist</li>
-  </ul>
-  
+  </ul>  
 </body>
 </html>
-- JS file
-```<!-- selects any <li> that is the first element of its type among its siblings -->
+```
+
+```javascript
+// selects any <li> that is the first element of its type among its siblings
 const firstItem = document.querySelector('#myList > li:first-of-type');
 console.log(firstItem); // returns <li>Firstlist</li>
 const secondItem = firstItem.nextElementSibling;
