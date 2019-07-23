@@ -2,25 +2,21 @@
 ## DOM Manipulation
 - When accessing the child elements of a target parent element. The way directly target the desired target is
  - parentNode or parentElement (the most commonly used one nonetheless parentNode) 
- - Why I got stuck on a single functionality for such a long time
+ - Why I got stuck on single functionality for quite a long time
     - clear structuring of the HTML document flow from the start is vital to facilitate 
     - Revising my old JS block of code
+        ```javascript
+        const accordions = document.getElementsByClassName('js-accordion');
         ```
-        const accordions = document.getElementsByClassName('js-accordion'); // [<el/>]
         ```
+        - as more than one accordions are stored in the variable `accordions` for loop comes in handy to iterate through each of those (`forEach` would equally be valid)
         ```
-        then because the above `accordion` finds multiples of them, we need to set up a for loop to iterate through each of them hence the loop (would `forEach` equally valid?? - Guess so, should work)
-        ```
-        - we are trying to attach the `.addEventListener` method which on click should return an anonymous function. 
+        - we are trying to attach the `.addEventListener` method which on click should return a function named `toggleClass` 
         - called it `toggleClass` in my `.js` file
         - `this.classList.toggle('active')`
+        - from here on for the content contained within the accordion, we will define a another `addEventListener`
 
-        then for the content contained within the accordion, we will define a another 
-
-
-        Refactoring
-        DRY
-
+        - Apply Refactoring (based on the DRY convention)
         -ClassList uses the following functions to change or even just access classes on an element
          - contains, checks whether the element has a class
          - `add` - adds a class to the element
