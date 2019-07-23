@@ -107,7 +107,7 @@
     - helps developers to create complex functionality more. These help abstract more complex code away from you
 #### Incorporating Google Maps to web pages
   - After declaring the HTML file as <!DOCTYPE html>
-  - Create ~~~~<div>~~~~to hold the google map
+  - Create `<div>`to hold the google map
   - Write a JS function that creates a map in the previously created <div> element
   - Load the Maps JS API using a script tag
 
