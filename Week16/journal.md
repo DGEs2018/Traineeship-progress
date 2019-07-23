@@ -76,15 +76,19 @@
     ```
 
 # 17.07.2019
-## Why the coding was wrong to implement
-## Attaching a common addEventListener to two target elements
+## Issue
+  - logically wrongly coded
+  - atttaching separate addEventListeners to two elements nested within one another
+    - as a consequence when this event is triggered, then two functionalities in different target element would be affected
+### Workaround / solution
 - Rename the wrapper element firstly 
 - Then find every of those target element (using document.getElementsByClassName / document.querySelectorAll or other properties.....)
 - As we now have a few of them them, we need to iterate through each of them 
 - Out of the many ways to go over an array is `for loop`.
-- For each of these let's attach an `addEventListener` which on click should trigger two functions below 
-- IIFE
-  - is a function that calls itself (literally invokes itself after being created, without a need to console.log)
+- For each of these let's attach an `addEventListener` which on click should trigger two separate functions defined below
+- To tell which function to trigger when clicked, apply the if conditions
+#### Immediately invoked function expression (IIFE)
+  - is a function that calls itself (literally invokes itself after being created, without a need to use console.log)
   - comes in handy when you need a function expression instead of the normal function statement
   - as javascript assumes that anything under a parenthesis is an expression, so does it equally assume when the IIFE function is inside. 
   - This is one of the better-practices than having to lie in the global scope ()
