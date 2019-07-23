@@ -115,8 +115,8 @@
  ```javascript 
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
-</script>
-```
+    </script>
+ ```
     - the url inside the script tag above, is where the javascript file that loads everything within the map using the Maps Javascript API.
     - the async attribute aids the browser to load the rest of website while the map also loads. 
     - if the attributes `async` & `defer` are, leads to stopping the loading of the API, until it finishes downloading. This will eventually slowdown your page load.
