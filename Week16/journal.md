@@ -75,7 +75,7 @@
       const togglingIcons = document.getElementsByClassName('glyphicon glyphicon-plus');
     ```
 
-#17.07.2019
+# 17.07.2019
 ## Why the coding was wrong to implement
 ## Attaching a common addEventListener to two target elements
 - Rename the wrapper element firstly 
@@ -91,9 +91,10 @@
       "sass": "sass --watch pages/Aboutus/about-us.scss:pages/Aboutus/about-us.css",
       Another possible way of refactoring, knowing we have a collection of items, i.e. an array
       ```javascript 
-      Array.from(elements).forEach(element => {})```;
+      Array.from(elements).forEach(element => {});
+      ```
 
-#18.07.2019
+# 18.07.2019
 ## Google Maps API
 ### General API definition
     - Definition
