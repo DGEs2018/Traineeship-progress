@@ -101,11 +101,10 @@
 # 18.07.2019
 ## Google Maps API
 ### General API definition
-    - Definition
-      - Acronym stands for application programming interface
+  - Definition
+      - the acronym API stands for application programming interface
   - What it does ?
-    - helps developers to create complex functionality more. These help abstract more complex code away from you. codes 
-    - []()
+    - helps developers to create complex functionality more. These help abstract more complex code away from you
 #### Incorporating Google Maps to web pages
   - After declaring the HTML file as <!DOCTYPE html>
   - Create ~~~~<div>~~~~to hold the google map
