@@ -18,6 +18,19 @@
           } 
  ## Best practice lessons which would save one a pile of time
  - Read up on white-space: no wrap; what it does, 
+ ### White-space
+ - Definition 
+ > Whitespace is a set of characters used to show horizontal or vertical spaces between other characters. They are often used to separate tokens in HTML, CSS, JavaScript, and other computer languages.
+ - [Reference on MDN](https://developer.mozilla.org/en-US/docs/Glossary/whitespace)
+
+    - the CSS property `white-space` dictates how white space inside an element is handled
+    ```css
+        white-space: normal;
+        white-space: nowrap;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: pre-line;
+    ```
  - Don't try and entirely replicate the given design from Figma, take care of the outermost dimensions of the containers
  - And then work your way in, that way, you'd avoid using many margins and paddings unless you need to push or separate 
  - Max-width would make for a better readability of a block of text such as paragraphs, keeping a constant width regardless of the width of the device
