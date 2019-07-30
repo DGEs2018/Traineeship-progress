@@ -8,33 +8,32 @@
         ```javascript
         const accordions = document.getElementsByClassName('js-accordion');
         ```
-        ```
         - as more than one accordions are stored in the variable `accordions` for loop comes in handy to iterate through each of those (`forEach` would equally be valid)
-        ```
         - we are trying to attach the `.addEventListener` method which on click should return a function named `toggleClass` 
         - called it `toggleClass` in my `.js` file
         - `this.classList.toggle('active')`
         - from here on for the content contained within the accordion, we will define a another `addEventListener`
 
         - Apply Refactoring (based on the DRY convention)
-        -ClassList uses the following functions to change or even just access classes on an element
-         - contains, checks whether the element has a class
+        - ClassList uses the following functions to change or even just access classes on an element
+         - the keyword `contains`, checks whether the element has a class
          - `add` - adds a class to the element
          - `remove` - removes a class
+         - `replace` - replaces an old value by a new one
          - `toggle` - adds a class if not present, or removes if it already exists
 
 # 16.07.2019
 ## Project problem
 ### Understanding the DOM manipulation
-- Recap of what the function toggleClass inside the classes.js (the upcoming-classes page of the frontendtrainee design implementation) is doing
+- Recap of what the function toggleClass inside the classes.js (the upcoming-classes page of the frontend trainee design implementation) achieves
 - it takes a parameter (in this case noted as *htmlElement*)
     - this parameter is an array of accordions (above togglingIcons[i])
-- the htmlElement.classList is then stored in a variable called 'elementClassList'
+- the _htmlElement.classList_ is then stored in a variable called 'elementClassList'
 - the next sibling for the htmlElement parameter(*htmlElement.classList*) is then defined and saved as *buttonLabel* 
 - then follows a conditional statement where the condition is if elementClasslist contains the class (glyphicon-plus) to toggle to 'glyphicon-minus' and vice versa for (glyphicon-minus)
 
 #### Issue
-- while we got the button to toggle between the plus and minus signs, the innerText of the buttonLabel won't toggle back after the first click
+- while we got the button to toggle between the plus and minus signs, the innerText of the variable _buttonLabel_ won't toggle back after the first click
 - after toggled to *minus-icon* on the browser inspector shows that the span holding the glyphicons contains both `glyph.glyphicon-plus.glyphicon-minus`
 - 
 #### Workaround attempted
@@ -42,17 +41,15 @@
 - `.replace(old value, new value)`
 - storing the queried containers of specific  after by
 #### Solution
-- having had the plus-icon selected(*bold* in the code), `const togglingIcons = document.getElementsByClassName('glyphicon *glyphicon-plus*');` the conditional statement wouldn't get past the first conditional statement indicated below
+- having had the class namee _plus-icon_ selected(*bold* in the code), `const togglingIcons = document.getElementsByClassName('glyphicon *glyphicon-plus*');` the conditional statement wouldn't get past the first conditional statement indicated below
    
     ```javascript
     if (elementClassList.contains('glyphicon-plus')) {
         elementClassList.toggle('glyphicon-minus');
-        // console.log(elementClassList.toggle);
         buttonLabel.innerText = 'Less';
     }
     ```
   -Today's latest codes during one-on-one with João
- 
   ```javascript
     for (let i = 0; i < togglingIcons.length; i += 1) {
         togglingIcons[i].addEventListener('click', function() {
@@ -126,8 +123,8 @@
 - Breaking up supplmental components into libraries allow for a quicker and parsing, hence loading.
 # 19.07.2019
 ## Lessons from setting up scss files
-### A few reasons why styling on scss wouldn't show on page
-  - over indentation of CSS property value codes 
+### A few of the possible reasons why styling on scss wouldn't show on page
+  - over-indentation of CSS property value codes 
   - incorrect path for / missing (from sass compiled) generated css output
   - as for the background-image
   - shorthand background-image: (url) *no-repeat* *cover*; could prevent background images from showing
