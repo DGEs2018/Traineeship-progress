@@ -30,8 +30,11 @@
     const toBeSpread = 'DAWIT'
     const individualChars = [...toBeSpread]; 
 ```
+ would return `['D', 'A', 'W', 'I', 'T']`
+ 
 ### destructuring
     - making a copy of individual items from an object or an array and assigning them to a variable
+    - 
 
 
 
@@ -79,5 +82,5 @@
     - This property is applied to list items, i.e elements with `display: list-item;`
     - By default including `<li>`
     - As the property is inherited, it can be set on a parent element, in which case it's either `<ol>` or `<ul>` and apply the same list styling to the contained items.
-
+ - `list-stle-type: disc, square, dash...`
 
