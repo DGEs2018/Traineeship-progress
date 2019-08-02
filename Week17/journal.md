@@ -1,21 +1,29 @@
 # 22.07.2019
-## Rebase and/or git merge master while on separate branch
+## Rebase, merge and merge conflict
 - There are two possible ways to integrate changes from one branch into another 
     - `git rebase`
     - `git merge`
 
-### git rebase
+### Git rebase
     - When diverging the main branch and made commits on two different branches
     - `git checkout branchname`
     - `git rebase master`
+    - technically what happens while rebasing a branch onto master is that the base of the feature branch is moved to master branch's ending point
     - rebasing is chosen for its cleaner commit history, as it would make it appear as if all the change that's been made follows a linear track.
+
+### Git merge
+    - the content of the feature branch is combined with the master
+    - consequently only the master branch is changed, the history of the branch remains the same & this adds a new commit to the history
+
  ### Merge conflict
     - This occurs when different changes, due to commit lag / aheadness when incorporating different branches
     - Which changes to incorporate must be chosen
     - Once prompted with merge conflict, opening the file in the editors shows
+
     > To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
     - [Resolving merge conflict using the command line](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
-    ```markdown
+
+    ```javascript
         If you have questions, please
         <<<<<<< HEAD
         open an issue
@@ -24,8 +32,8 @@
         >>>>>>> branch-a
     ```
     - After the accepting incoming changes
-
-
+    ![Illustrative diagram of `git merge` vs `git rebase` ](git merge vs git rebase.png)
+    [Read more on the blog](https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c)
  - `git add -A`, to add every change but not preferable
  - best would be to add the specific file by `git add specificfilename` to target individual files on which change has been made
 
@@ -53,7 +61,7 @@
 
  const { name, role, hobby } = myPersonalDetails 
 
- const { role: job} = myPersonalDetails // this would give the property role, an alias _job_
+ const { role: job} = myPersonalDetails // this would give the property role, an alias job
 ```
 ### the spread operator
     - the spread of operator is one of the new utilities introduced with ES6
