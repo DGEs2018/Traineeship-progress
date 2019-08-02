@@ -1,45 +1,70 @@
 # 22.07.2019
-## More git rebase, and git merge master (while on the branch)
+## Rebase and/or git merge master while on separate branch
 - There are two possible ways to integrate changes from one branch into another 
-    - rebase
-    - merge
+    - `git rebase`
+    - `git merge`
 
 ### git rebase
     - When diverging the main branch and made commits on two different branches
     - `git checkout branchname`
     - `git rebase master`
     - rebasing is chosen for its cleaner commit history, as it would make it appear as if all the change that's been made follows a linear track.
- - Merge conflict
-    - 
+ ### Merge conflict
+    - This occurs when different changes, due to commit lag / aheadness when incorporating different branches
+    - Which changes to incorporate must be chosen
+    - Once prompted with merge conflict, opening the file in the editors shows
+    > To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
+    - [Resolving merge conflict using the command line](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
+    ```markdown
+        If you have questions, please
+        <<<<<<< HEAD
+        open an issue
+        =======
+        ask your question in IRC.
+        >>>>>>> branch-a
+    ```
+    - After the accepting incoming changes
 
- - `git add -A`, to add every change but not preferable (best would be to be specifically target individual files on which change has been made - TAKE THIS TO THE JOURNAL)
-### merge
-- the easiest way to integrate branches to the master
-- 
+
+ - `git add -A`, to add every change but not preferable
+ - best would be to add the specific file by `git add specificfilename` to target individual files on which change has been made
 
 # 23.07.2019
-## Rebase and/or git merge master from the separate branch
-    - 
-
 ## Destructuring and the spread operator in javascript
+### Destructuring
+- This helps avoid repetition
+- making a copy of individual items from an object or an array and assigning them to a variable
+```javascript 
+    const myPersonalDetails = {
+        name: 'Dawit',
+        role: 'Trainee',
+        hobby: {
+            'learning languages',
+            'frontend web development',
+            'ping-pong', 
+            'socializing', 
+            'travelling'
+        };
+    };
 
+ const name = myPersonalDetails.name
+ const role = myPersonalDetails.role
+ const hobby = myPersonalDetails.hobby
+
+ const { name, role, hobby } = myPersonalDetails 
+
+ const { role: job} = myPersonalDetails // this would give the property role, an alias _job_
+```
 ### the spread operator
     - the spread of operator is one of the new utilities introduced with ES6
     - the spread operator allows an iterable to spread or expand inside a receiver
-```javascript
-    const toBeSpread = 'DAWIT'
-    const individualChars = [...toBeSpread]; 
-```
- would return `['D', 'A', 'W', 'I', 'T']`
- 
-### destructuring
-    - making a copy of individual items from an object or an array and assigning them to a variable
-    - 
-
-
-
-
-[Refer this link for the complete blog](https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
+    ```javascript
+        const toBeSpread = 'DAWIT'
+        const individualChars = [...toBeSpread]; 
+        console.log(individualChars) // would return 
+        `['D', 'A', 'W', 'I', 'T']`
+    ```
+[Refer to this link for the complete blog](https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
 
 # 24.07.2019
 ## Another way of importing Google Map APISs with neither an API key nor a javascript function
@@ -82,5 +107,7 @@
     - This property is applied to list items, i.e elements with `display: list-item;`
     - By default including `<li>`
     - As the property is inherited, it can be set on a parent element, in which case it's either `<ol>` or `<ul>` and apply the same list styling to the contained items.
- - `list-stle-type: disc, square, dash...`
+    ```css
+    list-style-type: disc, square, dash, circle; // or other icons of choice;
+    ```
 
