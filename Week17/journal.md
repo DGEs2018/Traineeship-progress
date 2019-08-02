@@ -33,9 +33,10 @@
     ```
 - After choosing the required changes then add and commit as well as push to update the remote repository
 
-![Illustrative diagram of `git merge` vs `git rebase` ](git merge vs git rebase.png)
-[Read more on the blog](https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c)
- - `git add -A`, to add every change but not preferable
+![Illustrative diagram of `git merge` vs `git rebase` ](git-merge_vs_git-rebase.png)
+
+- [Read more on the blog](https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c)
+ - `git add -A` to add every change but not preferable
  - best would be to add the specific file by `git add specificfilename` to target individual files on which change has been made
 
 # 23.07.2019
