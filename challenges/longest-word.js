@@ -1,3 +1,8 @@
+/**
+ * Write a program that takes in a string parameter and returns the longest word. Assumptions - i
+ * nput string is comprised of only letters and spaces.
+ * @param {*} phrase 
+ */
 function longestWord(phrase) {
 	// split the input sentence into separate words
 	const phraseSplitted = phrase.split(' ');
@@ -13,4 +18,5 @@ function longestWord(phrase) {
 	}
 	return longestByFar;
 }
-longestWord('Irrespective of how hard some programming concepts might be, learning ought to go on!'); // should return "Irrespective"
+console.log(longestWord('Irrespective of how hard some programming concepts might be, learning ought to go on!')); // should return 'Irrespective'
+console.log(longestWord('Pick me the longest word out of this sentence !')); // should return 'sentence'
