@@ -80,8 +80,8 @@
    - clarity is also communicated with search engines, ensuring the right match for the query searched
    - certain semantic HTML tags tend to be better indexed on search engines
 
-[Here is a good blog post regarding semantic HTML](https://www.lambdatest.com/blog/importance-of-semantic-html-in-modern-web-development/)
-[Another good blog about semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
+- [Here is a good blog post regarding semantic HTML](https://www.lambdatest.com/blog/importance-of-semantic-html-in-modern-web-development/)
+- [Another good blog about semantic HTML](https://www.lifewire.com/why-use-semantic-html-3468271)
 
 ### Picking the least powerful tool for the job
 - Although the three core web technologies are suited for specific functions. Nonetheless where certain functionalities seem doable, we need to choose the least powerful tool (out of html, css and javascript) that does the job
