@@ -1,7 +1,9 @@
 # 29.07.2019
 ### Issues I stumbled up on and learned from
-- a paragraph wouldn't appear when given class name, or should the class name have followed BEM convention ?
-- setting height / width to 100% in css, once a certain dimension is given saves so much time using
+- correct naming and nesting respectively, following BEM prevents redundancy
+- however a mistake following the BEM precisely could be an issue
+- setting width to 100% in css, once a certain dimension is given saves so much time and avoids space constrains, which would later complicate adjusting dimensions while applying CSS layouts
+- it's mostly wise leaving the height of the main page, and leave the browser 
 
 # 30.07.2019
 - Modules in CSS 
@@ -59,23 +61,40 @@
 
 # 02.08.2019
 ### Proxy
-
 (a way to fake, hence one of the possible ways to trick iframe to function, when the X-FRAME-OPTIONS under http response header for a web page - is set to  SAMEORIGIN, meaning disabled and page)
-### Use semantically meaningful elements whenever possible
--  Most commonly used ones are 
+
+
+
+ ### Importance of Semantic HTML tags
+ #### Definition
+   - Semantic HTML tags are tags carrying a meaning. Most commonly used examples include
  ```html
      <aside></aside> 
      <section></section> 
      <header> </header>
      <footer></footer>
      <nav></nav>
+ ```
+ - more readable / clearer, hence easier to maintain for developers
+   - this would guide new collaborators on pre-existing project which is updated everytime
+   - semantic tags could then come handier to trace which of them mean what content
+ - facilitate accessibility
+   - a big number of users  deal with websites, people with disabilities alike
+   - making tags readable by screen readers therefore benefits as various users as possible
+ - search engine optimisation (SEO)
+   - clarity is also communicated with search engines, ensuring the right match for the query searched
+   - certain semantic HTML tags tend to be better indexed on search engines
+
+[Here is a good blog post regarding semantic HTML](https://www.lambdatest.com/blog/importance-of-semantic-html-in-modern-web-development/)
+
+Choosing the least powerful tool for
+- Although the three core web technologies are suited for specific functions. Nonetheless where certain functionalities seem doable, we need to choose the least powerful tool (out of html, css and javascript) that does the job
+- A good case in point is a link that should lead us to another page
+- So in such a case instead of having to use javascript, where we write function to involving the event `'click'` as parameter and attach to that the method called `addEventListener`
+- we should just use anchor tag as shown below
+```html 
+<a href="https://google.com">Google</a>
 ```
 
- ### Possible reasons why using semantically meaningful elements is preferred and advised
- - easier readability for developers collaborating
- - facilitated accessibility
- - search engine optimisation (SEO)
-    - certain tags (such as these semantically meaningful ones) are better indexed on search engines
-
-
+could you give an example of choosing the least powerful tool for the job and explain what are the reasons to use semantically meaningful html tags?
 
