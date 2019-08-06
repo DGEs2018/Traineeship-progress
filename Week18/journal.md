@@ -1,8 +1,8 @@
-#29.07.2019
+# 29.07.2019
 ### Issues I stumbled up on and learned from
 - a paragraph wouldn't appear when given class name, or should the class name have followed BEM convention ?
 - setting height / width to 100% in css, once a certain dimension is given saves so much time using
-- 
+
 # 30.07.2019
 - Modules in CSS 
   - In development the term 'module' often describes an encapsulated building block / comprising the larger program
@@ -52,7 +52,7 @@
 #### How to use npm
 - To be able to use node package manager first we need to have node installed
 - [For that we need to go to this link](https://nodejs.org/en/download/)
-- `npm install`, then follow the instructions on the documentation ` @glidejs/glidejs`
+- `npm install` then follow the instructions on the documentation ` @glidejs/glidejs`
 - The package should then be visible in the `node_modules` folder under the directory where npm is run
 - Also the dependency becomees registered within the `package.json` file
 - To be able to implement the feature the package has, read up the documentation
@@ -63,11 +63,13 @@
 (a way to fake, hence one of the possible ways to trick iframe to function, when the X-FRAME-OPTIONS under http response header for a web page - is set to  SAMEORIGIN, meaning disabled and page)
 ### Use semantically meaningful elements whenever possible
 -  Most commonly used ones are 
- - <aside></aside> 
- - <section></section> 
- - <header> </header>
- - <footer></footer>
- - <nav></nav>
+ ```html
+     <aside></aside> 
+     <section></section> 
+     <header> </header>
+     <footer></footer>
+     <nav></nav>
+```
 
  ### Possible reasons why using semantically meaningful elements is preferred and advised
  - easier readability for developers collaborating
