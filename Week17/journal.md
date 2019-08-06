@@ -68,15 +68,16 @@
 
  const { role: job} = myPersonalDetails // this would give the property role, an alias job
 ```
+- While writng the codes from line 63 to 65 would be quite redundant, line 67 sums it all up in one line and is more concise.
 ### the spread operator
-    - the spread of operator is one of the new utilities introduced with ES6
-    - the spread operator allows an iterable to spread or expand inside a receiver
-    ```javascript
-        const toBeSpread = 'DAWIT'
-        const individualChars = [...toBeSpread]; 
-        console.log(individualChars) // would return 
-        `['D', 'A', 'W', 'I', 'T']`
-    ```
+- the spread of operator is one of the new utilities introduced with ES6
+- the spread operator allows an iterable to spread or expand inside a receiver
+```javascript
+    const toBeSpread = 'DAWIT'
+    const individualChars = [...toBeSpread]; 
+    console.log(individualChars) // would print 
+    `['D', 'A', 'W', 'I', 'T']`
+```
 [Refer to this link for the complete blog](https://codeburst.io/a-simple-guide-to-destructuring-and-es6-spread-operator-e02212af5831)
 
 # 24.07.2019
