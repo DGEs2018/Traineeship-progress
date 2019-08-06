@@ -10,15 +10,17 @@
 - `git rebase master`
 - technically what happens while rebasing a branch onto master is that the base of the feature branch is moved to master branch's ending point
 - rebasing is chosen for its cleaner commit history, as it would make it appear as if all the change that's been made follows a linear track.
+- rebase requires a `push -F` (force push). While more developers collaborate on the same branch force push could then cause an issue as the two branches can become out of sync.
+[Here is a great article elaborating on git rebase](https://dev.to/maxwell_dev/the-git-rebase-introduction-i-wish-id-had)
 
 ### Git merge
 - the content of the feature branch is combined with the master
 - consequently only the master branch is changed, the history of the branch remains the same & this adds a new commit to the history
 
- ### Merge conflict
-- This occurs when different changes, due to commit lag / aheadness when incorporating different branches
-- Which changes to incorporate must be chosen
-- Once prompted with merge conflict, opening the file in the editors shows
+### Merge conflict
+- conflicts occur when parallel changes are done over the same piece of code, requiring the programmer's close look to determine the correct version
+- accordingly which of the changes to delete or to accept and/or incorporate must be chosen
+- once prompted with merge conflict, opening the file in the VSC editor would show something similar to 
 
     > To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
 - [Resolving merge conflict using the command line](https://help.github.com/en/articles/resolving-a-merge-conflict-using-the-command-line)
@@ -38,6 +40,7 @@
 - [Read more on the blog](https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c)
  - `git add -A` to add every change but not preferable
  - best would be to add the specific file by `git add specificfilename` to target individual files on which change has been made
+ - since `.` signals we are in the current directory, `git add .` permits adding all files/directories in that directory 
 
 # 23.07.2019
 ## Destructuring and the spread operator in javascript
