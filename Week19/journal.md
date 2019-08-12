@@ -1,13 +1,17 @@
 # 05.08.2019
 # proxy
 
-## forms in HTML, label
+## HTML forms & label
 ### Definition
 - HTML forms allow for interaction of users with the webpage
 
 - There are a variety of elements that belong to forms
-    - <input></input>
-    - <textarea></textarea>
+    - <input></input> - one line text
+    - <textarea></textarea> - text body of more than a line (such as a message)
+- NBs - never nest `<form>` tags inside another `form`
+
+#### the `label` element
+- The label element is a way to link the input elements 
 - label elements help associate the id attribute of the input, these help direct the to go to the input field on click or submit event
 - 
 
@@ -47,12 +51,14 @@
     - the attributes of the form are thought to help configure the request to be sent on clicking submit
     - `action` and `method` are the essential attributes
 - action
-    - determines where the data goes to, it neeeds a value that must be a valid URL
-    - even refreshing the current page also means this
+    - determines where to the data goes, it neeeds a value that must be a valid URL
+    - even refreshing the current page counts to action (meaning the page reloads)
+    - mostly the case by default
+    - unless wished the user can stop the event from refreshing by adjusting `e.preventDefault`
 - method
     - defines how data is sent, the common ones of the HTTP protocol being `GET` and `POST`
 
-- when the action attribute is labelled as `action="\subscribed"` it could take us to this page
+- when the action attribute is labelled as `action="\subscribed"` the page will be redirected to this page
 
 - this could be of an interest if user needs to be directed to that page with a certain message
 
@@ -63,3 +69,23 @@
 - when we need to attach an event, we've to choose either one or the other 
 - either on a separated javascript
 - onsubmit attribute inside the HTML form
+    - for extra actions on the method `.onsubmit()` javascript function will be involved
+- attributes determine the behaviour of forms
+
+# 08.08.2019
+### the <fieldset> & <legend> elements
+- the <fieldset> serves to categorize groups of input forms 
+- <legend></legend> enables naming the above categorised group of similar purpose
+- <options></options>
+- <select><select>
+- 
+
+# 09.08.2019
+### APIs
+#### Definition
+- APIs are communication between applications, just like users interact/communicate with devices, apps / softwares do so amongst eachother
+- APIs facilitates developer's life quite
+- A multitude of APIs are available on programmableweb.com
+- Google, Youtube  and Facebook APIs are common
+- Twilio is one such common API exposed to the public 
+    - 
