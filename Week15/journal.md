@@ -79,11 +79,11 @@ Ways with the
 ## Javascript in the browser
 ### Methods
   - the `this` keyboard (often refers to the immediately above placed function or variable.method)
-  - `querySelector`
-  - `querySelectAll`
-  - `getElementById`
+  - `querySelector` (method that gets the first Element in the document matching the selector)
+  - `querySelectAll` (method that gets all of the elements in the document matching the selector)
+  - `getElementById` (method that gets all of the elements in the document with the specified ID - Element signals singular )
   - `getElementsByClassName` (because elements is plural, it must have contained a list of items, where indices come in to play, represented by [i] referring to the position of target element, i.e first, second etc.)
-  - `getElementByTagName`
+  - `getElementByTagName` (method that gets all of the elements in the document with the specified tag name)
   - `.firstElementChild.innerHTML`
   - The firstElementChild property returns the first child element of the specified element.
   - 
