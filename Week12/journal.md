@@ -11,14 +11,22 @@
         - when the image is not part of the content
         - the browser needs longer to parse the CSS file, which eventually delays the loading of the entire page
 - Unmatching path of an image could lead to `Refused to apply style from...is not a supported stylesheet MIME type, and strict MIME checking is enabled.` error
-## Viewport Units
-- em, rem, vh, vw
+## Relative and absolute CSS Units
+### Relative CSS Units
+- Relative length units specify a length relative to another length property.
+- em (measures the length of a font top to bottom - originally equally to the width of the letter M hence was coined the name 'em')
+- relative to the font-size of its immediate parent
+- rem (relative of em, works relative to the html (root) font-size)
 - vw - viewport width in percentage (1vw - 1% of viewport width)
 - vh - viewport height in percentage (1vh - 1% of viewport height)
-- pixels - used to be very commonly especially before responsive designs were introduced
+### Absolute CSS Units
+- pixels (px) - used to be very commonly especially before responsive designs were introduced
     - disadvantage -  unit isn't scalable. Meaning pixel size is fixed and doesn't change according as viewport size varies
+- other absolute units are point(pt), picas(pc)(1 picas = 12pt), in, mm and cm
 - so then em, rem, percent and viewport units were introduced
 - [The entire blog for more details](https://medium.com/@madhum86/css-font-sizing-pixels-vs-em-vs-rem-vs-percent-vs-viewport-units-b1485716afe7)
+- [Another blog on CSS Units](https://www.tutorialrepublic.com/css-tutorial/css-units.php#targetText=The%20units%20in%20which%20length,there%20is%20no%20default%20unit.)
+
 # 18.06.2019
 ## More on Sass
 - CSS sourcemaps and in-browser Sass editing 
