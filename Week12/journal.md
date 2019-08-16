@@ -3,9 +3,14 @@
 - to run the server everytime change is made to both `package.json` & the `.scss` files `npm run sass | npm run dev` needs to run inside the working directory
 - sass watch can be set to constantly note changes and reload the server automatically - this is done within the "scripts" section in the `package.json` file `"sass --watch pages/Landing/landing.scss:pages/Landing/landing.css"`. After the `sass --watch` `input path : output path` follows.
 ## CSS Notes
-- the difference between using an <img> tag and using a background image
+- the difference between using an <img />> tag and using a background image
     - the HTML tag <img>
         - is to show the image
+        - <img src="" alt="Description of the image"/> 
+            - the `src` attribute is required and indicates the path of the image embedded
+            - the `alt` says what the image is about
+                - it is helpful to let the user know about the image, if the image won't display/load for some reason
+                - also for better accessibility, as the screenreaders read the users with sight and cognitive disability 
         - using img tag instead of background-image can dramatically improve performance of animations
     - CSS background-image
         - when the image is not part of the content
