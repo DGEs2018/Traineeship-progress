@@ -131,7 +131,7 @@ function toggleClass(htmlElement) {
   >> `async` scripts may be run in any order, regardless of the order in which they appear in the HTML.
  - [Why use defer with Google Maps Javascript](https://stackoverflow.com/questions/36909380/why-use-defer-with-google-maps-javascript)
  - [async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
- - ![async vs defer attributes](async vs defer attributes.png)
+ - ![async vs defer attributes](async-vs-defer-attributes.png)
 ### Google map library
 - Bootstrap [URL](https://maps.googleapis.com/maps/api/js) links such as these are linked inside the HTML for the page
 - This request then loads all of the main JS objects and symbols to be usedin the Maps Javascript API
