@@ -32,7 +32,7 @@
 ## CSS
 - Contents under HTML elements are like layers of onions. Inside out they are denoted below sequencially
     - element - the text itself
-    - padding - which sits between the padding and the margin
+    - padding - which sits between the content and the border
     - border - sits between padding and margin
     - margin - occupies the outermost above the border
 ![](CSS-Box-Model.png)
