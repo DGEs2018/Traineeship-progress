@@ -129,9 +129,15 @@ function toggleClass(htmlElement) {
     src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
     </script>
  ```
-    - the url inside the script tag above, is where the javascript file that loads everything within the map using the Maps Javascript API.
-    - the async attribute aids the browser to load the rest of website while the map also loads. 
-    - if the attributes `async` & `defer` are, leads to stopping the loading of the API, until it finishes downloading. This will eventually slowdown your page load.
+  - the url inside the script tag above, is where the javascript file that loads everything within the map using the Maps Javascript API.
+  - the async attribute aids the browser to load the rest of website while the map also loads 
+  - `defer` causes the browser to wait to execute the script until the parsing is done
+  >> `async`  will only make the browser wait until the script download is complete, which means it may run the script either before parsing is complete or afterward, depending on when download finishes (and remember it could come from cache).
+  >> `defer` scripts will be run in the order they appear in the HTML, once parsing is complete.
+  >> `async` scripts may be run in any order, regardless of the order in which they appear in the HTML.
+ - [Why use defer with Google Maps Javascript](https://stackoverflow.com/questions/36909380/why-use-defer-with-google-maps-javascript)
+ - [async vs defer attributes](https://www.growingwiththeweb.com/2014/02/async-vs-defer-attributes.html)
+ - ![async vs defer attributes](async vs defer attributes.png)
 ### Google map library
 - Bootstrap [URL](https://maps.googleapis.com/maps/api/js) links such as these are linked inside the HTML for the page
 - This request then loads all of the main JS objects and symbols to be usedin the Maps Javascript API
