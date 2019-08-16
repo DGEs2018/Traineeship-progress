@@ -45,10 +45,14 @@
     - navigation tag
 # 19.06.2019
 ## Positioning in CSS
-    - replacing `position: relative; or position: absolute` and manipulating with `margins & paddings` could be a better practice for positioning elements
-    - flexbox is another handier method (one dimensional left to right or top to bottom)
-        - `property selector id or class {justify-content: flex-start; or flex-end; or center; or space-between; space-around}` left to right 
-        - `property selector id or class {align-items: flex-start; or flex-end; or center; or space-between; space-around}` top to bottom
+- before applying positioning with `position: relative;` or `position: absolute`, it's preferable to manipulate positioning using with `margins & paddings` as much as possible
+- use `position: relative;` or `position: absolute` as a last option
+- flexbox is another handier method (one dimensional left to right or top to bottom)
+- ```css 
+property selector id or class {
+    justify-content: flex-start; 
+    flex-end; or center; space-between; space-around}``` left to right 
+- `property selector id or class {align-items: flex-start; or flex-end; or center; or space-between; space-around}` top to bottom
     - css grid layout
 ## BEM101 (Block, Element, Modifier methodology)
 - Why we should follow BEM
