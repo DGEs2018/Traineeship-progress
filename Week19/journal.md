@@ -4,6 +4,8 @@
 ## HTML forms & label
 ### Definition
 - HTML forms allow for interaction of users with the webpage
+- The means for users to give their data and commit submission
+- 
 
 - There are a variety of elements that belong to forms
     - <input></input> - one line text
@@ -13,7 +15,7 @@
 #### the `label` element
 - The label element is a way to link the input elements 
 - label elements help associate the id attribute of the input, these help direct the to go to the input field on click or submit event
-- 
+- also allows for accessbility enabling readers have an easier time interpreting the document
 
 # 06.08.2019
 ## behaviour in forms
@@ -83,9 +85,17 @@
 # 09.08.2019
 ### APIs
 #### Definition
-- APIs are communication between applications, just like users interact/communicate with devices, apps / softwares do so amongst eachother
+- APIs are ways of communication between applications, 
+    just like users interact / communicate with devices, apps / softwares do so amongst themselves
 - APIs facilitates developer's life quite
 - A multitude of APIs are available on programmableweb.com
-- Google, Youtube  and Facebook APIs are common
+- The common ones out of these are Google, Youtube  and Facebook APIs
 - Twilio is one such common API exposed to the public 
     - 
+- NB APIs can also be used in-house, and these make the workflows for easier for devs
+- 
+
+
+
+   
+- 
