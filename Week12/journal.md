@@ -1,6 +1,6 @@
 # 17.06.2019
 ## Setting up sass
-- to run the server everytime change is made to both `package.json` & the `.scss` files `npm run sass | npm run dev` needs to run in the root terminal
+- to run the server everytime change is made to both `package.json` & the `.scss` files `npm run sass | npm run dev` needs to run inside the working directory
 - sass watch can be set to constantly note changes and reload the server automatically - this is done within the "scripts" section in the `package.json` file `"sass --watch pages/Landing/landing.scss:pages/Landing/landing.css"`. After the `sass --watch` `input path : output path` follows.
 ## CSS Notes
 - the difference between using an <img> tag and using a background image
@@ -46,11 +46,12 @@
 ![](CSS-Box-Model.png)
 **Figure 1** Image referring to the CSS box model
 * Building layout
-- Having an overview of the layout of a given a design could help roughly simplify before tackling the details. The list below should help categorize general overview
+- Having an overview of the layout of a given a design could help roughly simplify before tackling the details. Break the entire body in the following sections
+    - main tag (represents the dominant content of the <body> section of the HTML)
     - header tag
+    - navigation tag
     - section tag
     - footer tag
-    - navigation tag
 # 19.06.2019
 ## Positioning in CSS
 - before applying positioning with `position: relative;` or `position: absolute`, it's preferable to manipulate positioning using with `margins & paddings` as much as possible
