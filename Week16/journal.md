@@ -26,6 +26,19 @@
 ## Project problem
 ### Understanding the DOM manipulation
 - Recap of what the function toggleClass inside the classes.js (the upcoming-classes page of the frontend trainee design implementation) achieves
+```javascript
+function toggleClass(htmlElement) {
+        const elementClassList = htmlElement.classList;
+        const buttonLabel = htmlElement.nextElementSibling;
+        // const accordionParent = htmlElement.parentNode; // is the parent each of the togglingIcons
+        if (elementClassList.contains('glyphicon-plus')) {
+            elementClassList.toggle('glyphicon-minus');
+            buttonLabel.innerText = 'Less';
+        } else if (elementClassList.contains('glyphicon-minus')) {
+            elementClassList.toggle('glyphicon-plus');
+            buttonLabel.innerText = 'Tell me more';
+        }
+```
 - it takes a parameter (in this case noted as *htmlElement*)
     - this parameter is an array of accordions (above togglingIcons[i])
 - the _htmlElement.classList_ is then stored in a variable called 'elementClassList'
@@ -101,7 +114,9 @@
   - Definition
       - the acronym API stands for application programming interface
   - What it does ?
-    - helps developers to create complex functionality more. These help abstract more complex code away from you
+    - it enables communication between two applications
+    - while allowing your product or service communicated with other products / services, with no need to know how they are implemented, facilates development process
+
 #### Incorporating Google Maps to web pages
   - After declaring the HTML file as <!DOCTYPE html>
   - Create `<div>`to hold the google map
