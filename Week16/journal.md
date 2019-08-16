@@ -101,13 +101,7 @@ function toggleClass(htmlElement) {
   - is a function that calls itself (literally invokes itself after being created, without a need to use console.log)
   - comes in handy when you need a function expression instead of the normal function statement
   - as javascript assumes that anything under a parenthesis is an expression, so does it equally assume when the IIFE function is inside. 
-  - This is one of the better-practices than having to lie in the global scope ()
-      "sass": "sass --watch pages/Aboutus/about-us.scss:pages/Aboutus/about-us.css",
-      Another possible way of refactoring, knowing we have a collection of items, i.e. an array
-      ```javascript 
-      Array.from(elements).forEach(element => {});
-      ```
-
+  - This is one of the better-practices than having to lie in the global scope
 # 18.07.2019
 ## Google Maps API
 ### General API definition
@@ -156,4 +150,3 @@ function toggleClass(htmlElement) {
   - Parent(container / wrapper) where you should apply the `display: flex;` and the immediate descendant/child items
   - Should it be needed, apply flexbox model within the child items themselves (carry on to imagine parent-child item relationship) 
   - Then adjust, among other `property: value;` pairs, manipulating with `justify-content: flex-start flex space-around, space-between` as well `margin: ` & `padding`
-
