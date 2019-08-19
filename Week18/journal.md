@@ -91,5 +91,11 @@
 ```html 
 <a href="https://google.com">Open link</a>
 ```
+- the javascript equivalent for the anchor element above would be something like
+<button onclick="goToLink();">Open link</button>
 
-
+```javascript
+function goToLink() {
+  location.href = "https://google.com";
+}
+```
