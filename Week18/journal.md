@@ -2,8 +2,7 @@
 ### Issues I stumbled up on and learned from
 - correct naming and nesting respectively, following BEM prevents redundancy
 - however a mistake following the BEM precisely could be an issue
-- setting width to 100% in css, once a certain dimension is given saves so much time and avoids space constrains, which would later complicate adjusting dimensions while applying CSS layouts
-- it's mostly wise leaving the height of the main page, and leave the browser 
+- while making layouts in CSS, setting the width to 100% (relative to whatever size of the device) could save so much time. In contrary giving specific width would make it hard when adjusting margins and borders, due to space constraints caused by specifying the width. 
 
 # 30.07.2019
 - Modules in CSS 
