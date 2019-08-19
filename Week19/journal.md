@@ -1,5 +1,6 @@
 # 05.08.2019
-# proxy
+## Using proxy as a work-around to a X-Frame-Options: sameorigin
+[How to bypass the X-Frame-Options: SAMEORIGIN HTTP HEADER](https://stackoverflow.com/questions/2783095/how-can-i-bypass-the-x-frame-options-sameorigin-http-header)
 
 ## HTML forms & label
 ### Definition
@@ -67,10 +68,9 @@
 #### the attribute `name` attribute
 - names are important to reference form data
 - when removing the `name` attribute is removed we see no parameters in the URL
-
 - when we need to attach an event, we've to choose either one or the other 
 - either on a separated javascript
-- onsubmit attribute inside the HTML form
+- `onsubmit` attribute inside the HTML form
     - for extra actions on the method `.onsubmit()` javascript function will be involved
 - attributes determine the behaviour of forms
 
@@ -80,7 +80,6 @@
 - <legend></legend> enables naming the above categorised group of similar purpose
 - <options></options>
 - <select><select>
-- 
 
 # 09.08.2019
 ### APIs
@@ -89,13 +88,7 @@
     just like users interact / communicate with devices, apps / softwares do so amongst themselves
 - APIs facilitates developer's life quite
 - A multitude of APIs are available on programmableweb.com
-- The common ones out of these are Google, Youtube  and Facebook APIs
-- Twilio is one such common API exposed to the public 
-    - 
+- Out of the common ones out of these are Google, Youtube  and Facebook APIs
+- Twilio is one such common API exposed to the public used for UBER
 - NB APIs can also be used in-house, and these make the workflows for easier for devs
-- 
 
-
-
-   
-- 
