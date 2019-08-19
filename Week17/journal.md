@@ -68,7 +68,10 @@
 
  const { role: job} = myPersonalDetails // this would give the property role, an alias job
 ```
-- While writng the codes from line 63 to 65 would be quite redundant, line 67 sums it all up in one line and is more concise.
+>The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
+- [Destructuring assignment link on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
+- While writing the codes from line 63 to 65 would be quite redundant, line 67 sums it all up in one line and is more concise.
 ### the spread operator
 - the spread of operator is one of the new utilities introduced with ES6
 - the spread operator allows an iterable to spread or expand inside a receiver
