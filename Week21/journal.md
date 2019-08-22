@@ -70,3 +70,6 @@ class Board extends React.Component {
     alert (theCountry); // Switzerland
     alert (itsCapital); // Berne
 ```
+
+## The concept of `state` in ReactJS
+[Understanding React's `setState`](https://css-tricks.com/understanding-react-setstate/)
