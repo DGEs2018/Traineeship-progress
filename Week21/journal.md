@@ -141,7 +141,99 @@ class Board extends React.Component {
     // const colorChange = () => {
     //   app.style.background = "green";
     // };
+
+    const greet = (whattosay) => {
+	return function(name) {
+  	console.log(whattosay + ' ' + name);
+  }
+}
+
+console.log(greet('Hi')('Tony'));
+
+let sayHi = greet('Hi');
+
+sayHi('Tony');
+
+function buildFunctions() {
+  let arr = [];
+	for (let i=0; i<3; i++) {
+    arr.push(
+     function(){
+        console.log(i);
+     }
+    )
+    }
+   return arr;
+}
+
+let fs = buildFunctions();
+
+fs[0]();
+fs[1]();
+fs[2]();
+
+
+const App = props => {
+// useState returns an array, which always contains two elements
+	const [state, setState] = useState ({
+  	selectedCharacter: 1,
+    side: 'light',
+    destroyed: false
+  });
+  
+  const sideHandler = side => {
+  	setState({ side: side});
+  };
+  
+  const destructionHandler = () => {
+  	this.setState({destroyed: true});
+  } 
+  
+  let content = (
+  <React.Fragment>
+   	<CharPicker>
+  )
+	state = ;
+  
+  sideHandler = side => {
+  	this.setState({side: side})
+  }
+}
 ```
 
 Reacthook you can manage state with functional component
 
+```javascript
+// the concept of Closures
+const greet = (whattosay) => {
+	return function(name) {
+  	console.log(whattosay + ' ' + name);
+  }
+}
+
+console.log(greet('Hi')('Stranger'));
+
+let sayHi = greet('Hi');
+
+sayHi('Stranger');
+
+function buildFunctions() {
+  let arr = [];
+	for (let i=0; i<3; i++) {
+    arr.push(
+     function(){
+        console.log(i);
+     }
+    )
+    }
+   return arr;
+}
+
+let fs = buildFunctions();
+
+fs[0]();
+fs[1]();
+fs[2]();
+
+
+```
