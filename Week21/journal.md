@@ -14,7 +14,7 @@
 #### Definition
 - JSX files are JavaScript XML extension syntaxes to JS that is used with React to describe elements in the UI
 - JSX files can only be written inside curly braces.
-- These will then be compiled to vanilla JS
+- These will then be compiled to vanilla JS using `Babel REPL`
 
 ### Components
 - Components in React are pieces of codes that could be used independently
