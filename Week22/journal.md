@@ -135,6 +135,9 @@ return (
 ```
 #29.08.2019
 
-#30.08.2019 - was about breaking down module into separate components and how to have siblings communicate with the container component/ with each other and.
+#30.08.2019 
+### Breaking down a module into separate components
+- breaking down module into separate components and how to have siblings communicate with the container component/ with each other and
+- lifting the state up (easier demonstrated than summarized)
 
 
