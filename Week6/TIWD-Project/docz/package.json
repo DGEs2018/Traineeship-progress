@@ -33,7 +33,7 @@
     ]
   },
   "devDependencies": {
-    "acorn": "^6.0.5",
+    "acorn": "^6.4.1",
     "docz": "^1.0.4",
     "docz-theme-default": "^1.0.4",
     "webpack": "^4.28.4"
